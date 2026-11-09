@@ -1,0 +1,242 @@
+[
+  {
+    "path": "vendor/mattpocock/.agents/adr/0001-explicit-setup-pointer-only-for-hard-dependencies.md",
+    "sha256": "8f60cf9bf19f1ee8cc09a15c2e06e1d7a9cb51f79d9a273dd9b20b8a2a494f80"
+  },
+  {
+    "path": "vendor/mattpocock/.agents/adr/0002-ship-as-a-claude-code-plugin.md",
+    "sha256": "75216252f259880e7121b75bab2b8d9a571dcbd0bc4dafcc014232c73e295fd4"
+  },
+  {
+    "path": "vendor/mattpocock/.agents/install-block.md",
+    "sha256": "1cc0c600e68b745613c2d9b0b348c28da28b53e16bd99301c8e5c586ff0dfdc9"
+  },
+  {
+    "path": "vendor/mattpocock/.agents/invocation.md",
+    "sha256": "a8ee3ff9cab8fe247c5de4312320117c001df548960970a2769856349ec09402"
+  },
+  {
+    "path": "vendor/mattpocock/.agents/writing-docs.md",
+    "sha256": "5ab85d0351589f5d9bc3b05b3735d7cbe342b75cf2fb5dc6b489e6099566bfd0"
+  },
+  {
+    "path": "vendor/mattpocock/.changeset/README.md",
+    "sha256": "495bd4805f8362853bce99689c1cd75db8c475dfa38930619d2e197d7554db27"
+  },
+  {
+    "path": "vendor/mattpocock/.changeset/chief-of-staff-shared-wiki-procedures.md",
+    "sha256": "8d9357b55a16c2069344b662680f9d1bd8f6bdda08c0fc0fe107231e7924d48f"
+  },
+  {
+    "path": "vendor/mattpocock/.changeset/config.json",
+    "sha256": "61717b21675ba9d99f0fc363253ead2716895a4c043c779727d8c685d48684e8"
+  },
+  {
+    "path": "vendor/mattpocock/.changeset/implementer-fresh-per-ticket.md",
+    "sha256": "2e9ff9079f13ec03f6ad818d3d055e6069e84365967842d3dd1626a650a55de0"
+  },
+  {
+    "path": "vendor/mattpocock/.changeset/software-factory-skill.md",
+    "sha256": "6ac1c31b0e5ad092b29e678daf24d03bcf75052d09f8a53bf2e7cdedd9a19fe5"
+  },
+  {
+    "path": "vendor/mattpocock/.claude-plugin/marketplace.json",
+    "sha256": "83e889fed719fc92dc17a4accc69beed7d6c28bc87ec064b515a90a030f72e13"
+  },
+  {
+    "path": "vendor/mattpocock/.claude-plugin/plugin.json",
+    "sha256": "5ac658336404c0b09a7c3f6d754a649fd7721cf1b5c604c36c6d62a96e8c81f7"
+  },
+  {
+    "path": "vendor/mattpocock/.github/ISSUE_TEMPLATE/bug.yml",
+    "sha256": "bbf8c6e46290feab2d298e5ca13a1e1af403c8051343de39cb33529718c244c3"
+  },
+  {
+    "path": "vendor/mattpocock/.github/ISSUE_TEMPLATE/config.yml",
+    "sha256": "4372780a68fc043d0e44bed3f72595d8535d0da45c3fb69bed0145f18d294239"
+  },
+  {
+    "path": "vendor/mattpocock/.github/ISSUE_TEMPLATE/idea.yml",
+    "sha256": "d1b0abae1798dd787499fe1b5676c0eb949a08517a4fce2514096682d4988568"
+  },
+  {
+    "path": "vendor/mattpocock/.github/workflows/needs-info.yml",
+    "sha256": "d1f57c0e864694e66f319bf9c3d7096a019b47bcf4d59fe5e747074c429a2f67"
+  },
+  {
+    "path": "vendor/mattpocock/.github/workflows/release.yml",
+    "sha256": "73ce81a83de90d93a63272dae7e1a3ff8d57dc2f8e99424694289dc7174eec46"
+  },
+  {
+    "path": "vendor/mattpocock/.github/workflows/triage-label.yml",
+    "sha256": "d17784874e9b37e7e90743f5fa019ecd3a9b31e0623a4014a2aa68782eef330e"
+  },
+  {
+    "path": "vendor/mattpocock/.gitignore",
+    "sha256": "a7e7370254fc919ab78ddf61e0e3763b80ea7ade18863c6650c329da44b8ec7b"
+  },
+  {
+    "path": "vendor/mattpocock/.out-of-scope/frozen-misc-skills.md",
+    "sha256": "df55c265d366a5365437c8402bfc6376f0095b4d2d0d9772abaae4dfb731db4e"
+  },
+  {
+    "path": "vendor/mattpocock/.out-of-scope/harness-name-collisions.md",
+    "sha256": "d4fae0db17921efb822edcad7af449c700a62beea3a4f3193d73655817580b2c"
+  },
+  {
+    "path": "vendor/mattpocock/.out-of-scope/lazy-load-writing-for-agents.md",
+    "sha256": "632d9a790290c4eaec5a4d972e2a157994abd7f4bf940a81406177bb55fde811"
+  },
+  {
+    "path": "vendor/mattpocock/.out-of-scope/mainstream-issue-trackers-only.md",
+    "sha256": "1a0f3c328099efb3810186fb347a29170e93d4c098ec0b19a376fbc9de36f790"
+  },
+  {
+    "path": "vendor/mattpocock/.out-of-scope/native-question-tool.md",
+    "sha256": "24b3780c245e514c6fc8a015cbe701a35b8dae0b65f91518c27631cd1843b9fc"
+  },
+  {
+    "path": "vendor/mattpocock/.out-of-scope/new-skills.md",
+    "sha256": "4c82c95cf84ae340a09513db8764848c2e144f94d183ae0407e90eba44c8c52f"
+  },
+  {
+    "path": "vendor/mattpocock/.out-of-scope/question-limits.md",
+    "sha256": "a4c7ab33523e8f88b75be6549f657cf086b86d77be48b87d48276311e368cc9d"
+  },
+  {
+    "path": "vendor/mattpocock/.out-of-scope/setup-skill-verify-mode.md",
+    "sha256": "aba793ba7b3457fd75e7c2560ec0e98e75a051ecfc5f91f73f16fc97475919bd"
+  },
+  {
+    "path": "vendor/mattpocock/.out-of-scope/subagent-recursion.md",
+    "sha256": "27f48a714d63e1a0f5e6ed827855ba45183622429f8ece30036de15573b170cc"
+  },
+  {
+    "path": "vendor/mattpocock/AGENTS.md",
+    "sha256": "49be3ee6ecd6122a75cd9db494a5b8f0eda3c2b472ddef184ac09d99834ad6b2"
+  },
+  {
+    "path": "vendor/mattpocock/CHANGELOG.md",
+    "sha256": "4428dd2711eb5e51ae8bca7a55a1144e3afd5805afb96c9480faa1081b77622e"
+  },
+  {
+    "path": "vendor/mattpocock/CLAUDE.md",
+    "sha256": "49be3ee6ecd6122a75cd9db494a5b8f0eda3c2b472ddef184ac09d99834ad6b2"
+  },
+  {
+    "path": "vendor/mattpocock/CONTRIBUTING.md",
+    "sha256": "4d0051793d0c73d0ae5f892cad1dc32030d839c4cd31b0496985f18b44cebfcf"
+  },
+  {
+    "path": "vendor/mattpocock/GLOSSARY.md",
+    "sha256": "4b5291aae26ee0cca5ee31c20b4652d3988a063b2348ed48a751ce9c660a5614"
+  },
+  {
+    "path": "vendor/mattpocock/LICENSE",
+    "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+  },
+  {
+    "path": "vendor/mattpocock/README.md",
+    "sha256": "345041d56cf1411b6b3ca1cc54014d26c563890f817f4cb9e2cb193dcd771a3e"
+  },
+  {
+    "path": "vendor/mattpocock/SCOPE.md",
+    "sha256": "4d5c09ef33193d9db3dac2e6e11e5d6b1abcfe08135d20c8a6d9cd3b0d6ed866"
+  },
+  {
+    "path": "vendor/mattpocock/docs/agents/triage-labels.md",
+    "sha256": "a44f6ede99c2f01e969685d7b33e53d47386d74d6a365adedb8a42c3b329bcce"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/ask-matt.md",
+    "sha256": "ecefe252d5e91a079350d564ebd0a3c3ea8c4dc3274bebb332f3ce5223757bfa"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/code-review.md",
+    "sha256": "2c14aa2f82064132ee3a5ab16cf3ccb0bc5679801b1e3dcdf4e33b4b738c9330"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/codebase-design.md",
+    "sha256": "06ae3f8d86a89d0a6cf98d36c36605564c6e219aebe5214aa37b476337573f3d"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/diagnosing-bugs.md",
+    "sha256": "0d2f5ab04d9c2af36168ab43e30ac63e3156b732c0a445b5b5ddd81d3f98ead0"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/domain-modeling.md",
+    "sha256": "98016509b1ddb6b1898a38b69b9119852e97ec3ad1ff5d3ebc20daff62fa6b2e"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/grill-with-docs.md",
+    "sha256": "b15edc0ac4bb4bc2b4cb6f32307d03255108ed282290b10ea83ed9170bbc2181"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/implement-spec.md",
+    "sha256": "6778976cfef5fccf6a4b8974f32517e119dd18fe0bbd00f233f13fa1f00194b7"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/implement.md",
+    "sha256": "8106f9328412a97f4cad3fad9ff4ccf61e609e9a3d384407c78a4ac6e02609f0"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/improve-codebase-architecture.md",
+    "sha256": "abefc0f2577bbc7cdf586581993f2025b0dc8284f2c2371aa308de567cf5eea8"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/pr.md",
+    "sha256": "6ddd7b93d01efc16dfb4e28106f8f75b02b61f3049c22cb39117209549acb226"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/prototype.md",
+    "sha256": "339d6ac4917d1c129860788d6d6aad308299996c3ee034646055d4c91e9df6b5"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/research.md",
+    "sha256": "9953179696fa5d4e8ea82aaf900aaa08d84ce2a43b0a3f87213a73bb9bc60c40"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/resolving-merge-conflicts.md",
+    "sha256": "4b302655469683cdfc5e130ea4d4d2341ececd91525e28ee9d3fc9cb566a46c8"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/retro.md",
+    "sha256": "fbe0893f6e95e6110a18a22246dbfb940f1a0ee9a1c804dce883546c9ef899f8"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/setup-matt-pocock-skills.md",
+    "sha256": "ee9a734b73a5c0cd851904fd073255248af7889ca8cb03b33f9207bf211227b6"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/tdd.md",
+    "sha256": "63bc8fe89693efa68ca0859398155c761f031af1fdbc4419d498b78d9cc2cdc9"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/to-spec.md",
+    "sha256": "f623ea0bbe94e9b314657dd0c9da4c4b7dbb71830cba78af7c2bb70ca79ffa90"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/to-tickets.md",
+    "sha256": "e0f2812c8e47c5951a0efd2715062ed93a4f47e2bfce47cf20960e2ffbb6e72a"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/triage.md",
+    "sha256": "88cb240a6e3d9961732d1b537b8a4fc402d938db7ce1d91425be32ee5d67fdba"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/wayfinder.md",
+    "sha256": "7b123473848da896714e3bd3dbea6fe02341c40c186cb7c9c1f0b3735a12c376"
+  },
+  {
+    "path": "vendor/mattpocock/docs/engineering/wizard.md",
+    "sha256": "286831fa86754efd12b94899be87fe8223ed607882e0c37580dab852db8dc5a3"
+  },
+  {
+    "path": "vendor/mattpocock/docs/productivity/grill-me.md",
+    "sha256": "3ad2294740ad7de999cbaa1e99badd8b2b1461359639749dea379bfc8b6341dc"
+  },
+  {
+    "path": "vendor/mattpocock/docs/productivity/grilling.md",
+    "sha256": "091d40afb66804d1b7f7e65745ee4b911edddc18d76faf9e9ba9f210f0570bb8"
+  }
+]

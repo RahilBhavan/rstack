@@ -41,7 +41,11 @@ choice. Include every wanted root. Relative paths resolve against the config fil
 }
 ```
 
-Valid kinds are local, system, synced and plugin. Include plugin-provider roots
+Valid kinds are local, system, synced, plugin and vendored. Pinned upstream libraries
+under this checkout's vendor directory are default roots. Their IDs include the
+author, such as vendor/mattpocock/tdd or vendor/poteto/tdd. These are files the
+router can read; they are not automatically registered native slash commands.
+Bare duplicate names still require explicit selection. Include plugin-provider roots
 at their existing `provider/plugin/version/...` hierarchy, as defaults do. A root
 whose manifest is malformed is reported; optional absent roots are notices.
 Inventory exits 1 for nonoptional discovery issues while retaining the observation.

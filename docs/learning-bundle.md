@@ -1,11 +1,11 @@
 # Install rstack with Rahil's learning skills
 
-This extension bundles exactly six packages: the rstack router, exam-prep, practice-exam-factory, socratic-tutor, learnharness and study-loop. The rest of Rahil's installed library remains separately maintained. The public source is https://github.com/RahilBhavan/rstack at v0.1.0. Ask your AI to read INSTALL_WITH_AI.md and install from GitHub. The older MECG ZIP is a separate, frozen three-package fallback.
+The directly linked learning entry set contains six packages: the rstack router, exam-prep, practice-exam-factory, socratic-tutor, learnharness and study-loop. Version0.2.0 additionally bundles the Matt Pocock, Poteto and Theo source collections described in upstream-catalog.md; it does not copy private/vendor-managed parts of Rahil's machine. The public source is https://github.com/RahilBhavan/rstack at v0.2.0. Ask your AI to read INSTALL_WITH_AI.md and install from GitHub. The older MECG ZIP is a separate, frozen three-package fallback.
 
 ## Mac installation
 
 1. Install/authenticate one provider in T3 as the textbook explains. Select Full access.
-2. Clone https://github.com/RahilBhavan/rstack at tag v0.1.0 into `~/Projects/rstack`, following INSTALL_WITH_AI.md. Keep the checkout in place: installation links to it.
+2. Clone https://github.com/RahilBhavan/rstack at tag v0.2.0 into `~/Projects/rstack`, following INSTALL_WITH_AI.md. Keep the checkout in place: installation links to it.
 3. Use a supported Python 3.10+ installation. In Terminal, run separately:
 
 ```sh

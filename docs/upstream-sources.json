@@ -1,0 +1,79 @@
+{
+  "release": "v0.2.0",
+  "families": [
+    {
+      "name": "mattpocock",
+      "repository": "https://github.com/mattpocock/skills",
+      "commit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "upstream_subdirectory": ".",
+      "license": "MIT",
+      "root": "vendor/mattpocock",
+      "skill_root": "vendor/mattpocock/skills",
+      "skill_count": 39,
+      "file_count": 184,
+      "manifests": [
+        "docs/upstream/mattpocock-01.json",
+        "docs/upstream/mattpocock-02.json",
+        "docs/upstream/mattpocock-03.json",
+        "docs/upstream/mattpocock-04.json"
+      ],
+      "enabled_skill_count": 31,
+      "discovery_roots": [
+        "vendor/mattpocock/skills/engineering",
+        "vendor/mattpocock/skills/misc",
+        "vendor/mattpocock/skills/productivity"
+      ],
+      "reference_only": "8 in-progress skills retained as upstream source, excluded from default discovery; software-factory has invalid YAML frontmatter in the pinned source."
+    },
+    {
+      "name": "poteto",
+      "repository": "https://github.com/cursor/plugins",
+      "commit": "236e5481d05cbadc315b374a5de54971858c27bb",
+      "upstream_subdirectory": "pstack",
+      "license": "MIT",
+      "root": "vendor/poteto",
+      "skill_root": "vendor/poteto/skills",
+      "skill_count": 58,
+      "file_count": 573,
+      "manifests": [
+        "docs/upstream/poteto-01.json",
+        "docs/upstream/poteto-02.json",
+        "docs/upstream/poteto-03.json",
+        "docs/upstream/poteto-04.json",
+        "docs/upstream/poteto-05.json",
+        "docs/upstream/poteto-06.json",
+        "docs/upstream/poteto-07.json",
+        "docs/upstream/poteto-08.json",
+        "docs/upstream/poteto-09.json",
+        "docs/upstream/poteto-10.json"
+      ],
+      "enabled_skill_count": 58,
+      "discovery_roots": [
+        "vendor/poteto/skills"
+      ],
+      "additional_reference_manifests": [
+        "vendor/poteto/automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
+        "vendor/poteto/automations/benny/skills/setup-benny/SKILL.md",
+        "vendor/poteto/automations/benny/skills/triage-issue-reports/SKILL.md"
+      ]
+    },
+    {
+      "name": "theo",
+      "repository": "https://github.com/t3dotgg/tstack",
+      "commit": "1085050f3baed1ac724caa4a8166145fb2ac88af",
+      "upstream_subdirectory": ".",
+      "license": "MIT",
+      "root": "vendor/theo",
+      "skill_root": "vendor/theo/skills",
+      "skill_count": 9,
+      "file_count": 16,
+      "manifests": [
+        "docs/upstream/theo-01.json"
+      ],
+      "enabled_skill_count": 9,
+      "discovery_roots": [
+        "vendor/theo/skills"
+      ]
+    }
+  ]
+}

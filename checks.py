@@ -4,6 +4,7 @@ import json
 import hashlib
 import re
 from pathlib import Path
+from vendor_sources import verified_vendor_files
 
 import yaml
 
@@ -37,6 +38,12 @@ for path in (skill / "references/workflows").glob("*.json"):
 # entries may retain an upstream size above the local authoring limit.
 manifest = json.loads((ROOT / "docs/tutor-source-manifest.json").read_text())
 vendored_hashes = {"skills/" + item["file"]: item["sha256"] for item in manifest["files"]}
+try:
+    upstream_hashes = verified_vendor_files(ROOT)
+    vendored_hashes.update(upstream_hashes)
+except (ValueError, OSError, KeyError) as exc:
+    errors.append(str(exc))
+    upstream_hashes = {}
 
 files = [p for p in ROOT.rglob("*") if p.is_file() and
          not any(x in p.relative_to(ROOT).parts for x in
@@ -46,6 +53,10 @@ for path in files:
         expected = vendored_hashes.get(path.relative_to(ROOT).as_posix())
         if expected is None or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
             errors.append(f"split file by responsibility: {path.relative_to(ROOT)}")
+    # Upstream prose/examples stay unedited. Hash verification, not our local-link
+    # authoring conventions, governs these exact snapshots; tools are not activated.
+    if path.relative_to(ROOT).as_posix() in upstream_hashes:
+        continue
     if path.suffix != ".md":
         continue
     for target in re.findall(r"\]\(([^\n)]+)\)", path.read_text()):

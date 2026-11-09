@@ -1,0 +1,242 @@
+[
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/LoginParallel/chart.mmd",
+    "sha256": "d00f84c57486de54bde56ee75ad223e6936bd1b0334319cef60ebbee899a2480"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/LoginParallel/graph.dot",
+    "sha256": "8f4d20009e23824b0bfbeddd2ca9d1c12e764599a7e179018c98d432d091ab86"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/LoginParallel/report.md",
+    "sha256": "ed54afd8a979fb2c7eedf28b0bbdd1bfc91b360d883eacd8254483f1db5155d0"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/LoginParallel/sany.out",
+    "sha256": "9906450ef11cc5c94325cef0b648736135708d37ee3a41841b55035f41e43309"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/LoginParallel/verdict-1.exit",
+    "sha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/LoginParallel/verdict-1.out",
+    "sha256": "dcfd62876aa6e62fd08d8dad9b38a5f54ec86725f92c48e8328ac0461dd4be67"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/LoginParallel/verdict-2.out",
+    "sha256": "bad6cc9bf2bce357642aba04e7fd952800b718e7a518b9679764a4058465d1d0"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/LoginParallel/view.mjs",
+    "sha256": "9a45c5718c3eb1171b0a2271e79612e6af833038f13ab8e16b37f15947d53cca"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayer/ChartRun.out",
+    "sha256": "2460f0f517117836b5a02e70e4ef2f9889061f1b2cb83ac4bf8fc41532fa2b1d"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayer/MediaPlayer.cfg",
+    "sha256": "0f1a86e105cf1c303cedc510b4fe080175fc77eb88fe98c1eba163d04436ffad"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayer/MediaPlayer.tla",
+    "sha256": "ace4961900ceb44281c94879c05550123a74c5427e9fcfaf3dfb134f51c38390"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayer/chart.mmd",
+    "sha256": "e3a6e6987bd8c6aa9fcc480a5f19e1c8c954804935f2d5f938279e6e7c2f6ceb"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayer/graph.dot",
+    "sha256": "881d999fa6e60ba7698ea8633f16a315be97a370aa300cdea885d04333028534"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayer/report.md",
+    "sha256": "ef407dcd4e536034ec7512076364831c7f904912cba5ed6f53659db02e13d82a"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayer/sany.out",
+    "sha256": "6385013e3e792b0404acc8ae8c42718fba4a626ff83590bb680318c08d497e88"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayer/verdict-1.exit",
+    "sha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayer/verdict-1.out",
+    "sha256": "b6f6af48489b17cc9d21ccaf851a555ec8e51d29bc76486b11801b4ae1c11b86"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayer/verdict-2.out",
+    "sha256": "d9eaa58bbc7364560b1365ef1fe74454ab97ca093cbf05a9bb14d530145165cf"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayer/view.mjs",
+    "sha256": "019383f6b4f753b5721485f3cff9b3762e046f4cea134f26a709e9ce4c43dde9"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerFixed/ChartRun.out",
+    "sha256": "1050612e030b11a1f6e1942880bfcfb634913e0123fe04133e38554553cb79f6"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerFixed/MediaPlayerFixed.cfg",
+    "sha256": "2d6715915152436fc1016313ef8dd55251c0f712417226c47345228527acff83"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerFixed/MediaPlayerFixed.tla",
+    "sha256": "59c4c86bfa1f38e0a01e8675d9936558d9a3899c3de8243483e633674a6bccfc"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerFixed/chart.mmd",
+    "sha256": "1a77aeca211f5469041f03c6d149beec17f300d6cb5e5386e5f73d6a214f73ae"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerFixed/graph.dot",
+    "sha256": "cb6b2d85fb70cfa6aefe16e3fdcb686b60f6593ec755e04ed5c4ec15867766f7"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerFixed/report.md",
+    "sha256": "ea569763d18889ff07c5be90ac6fb74ca83f4a19f1ba79000fa151c692d38d54"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerFixed/sany.out",
+    "sha256": "22f3486dbbfc11c5ae0f62e25aab9742b0875285c5de8e490f5cd84b1b948bf0"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerFixed/verdict-1.out",
+    "sha256": "442c9923009f88f8f462a2bb4533987b6797495bdfee359a74c49b1a360fe386"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerFixed/view.mjs",
+    "sha256": "019383f6b4f753b5721485f3cff9b3762e046f4cea134f26a709e9ce4c43dde9"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/ChartRun.out",
+    "sha256": "4a67e04e5c801f92ce4a9fe7bf48fdc3a800abe6754d75c0df2ac0f7fa85af68"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/MediaPlayer.tla",
+    "sha256": "ace4961900ceb44281c94879c05550123a74c5427e9fcfaf3dfb134f51c38390"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/MediaPlayerProps.cfg",
+    "sha256": "d9995ff6b04506d0531f7264a85c932fe0e4ea2017608952d6908ef9ed31f828"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/MediaPlayerProps.tla",
+    "sha256": "31f510c61062eaede29be56efd920aa0cfdb9851e09cdbb0c971468c48e54985"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/chart.mmd",
+    "sha256": "40e8330310aa4ec838ad4bf99b12e5eb0ddc7b6ec99bf21d764c05ab05217d9b"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/graph.dot",
+    "sha256": "881d999fa6e60ba7698ea8633f16a315be97a370aa300cdea885d04333028534"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/report.md",
+    "sha256": "5a68beff9cbd182489e784b065f588a48ec61c60f87ed70dafe80ee0fde56ef3"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/sany.out",
+    "sha256": "dc86d7c73175b68cf92d65d35758da6836a38e0ef3d5dba209c80b90df6a53d4"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-1.exit",
+    "sha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-1.out",
+    "sha256": "364c7dfbf9cabaea6f15e96811df209ee272800f5d5b671ce27532346dc3215d"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-2.out",
+    "sha256": "e01f79327c1e8a2978629ad8e5486baf95dfb0dd4ffd44152b159b8d35fb0bc9"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-3.out",
+    "sha256": "8f9d8deff62a9625782caff95aa89f03607aa50bd31f31b5d26f459c04757f09"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-4.exit",
+    "sha256": "1a252402972f6057fa53cc172b52b9ffca698e18311facd0f3b06ecaaef79e17"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-4.out",
+    "sha256": "04579153733514c4c7bb351a04764e1a9dc5f6815b7dc056fb51ee0dec5ef48a"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-5.exit",
+    "sha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-5.out",
+    "sha256": "274b0b70a9e7cf8d6c140a968b8674be5fe8073252db78ec6b823cc7f40f7538"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-6.out",
+    "sha256": "8f03e3f3afb0378a13715c9f90a3b59c1f46a53f295f8eb74f1b61c62d832a43"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/MediaPlayerProps/view.mjs",
+    "sha256": "019383f6b4f753b5721485f3cff9b3762e046f4cea134f26a709e9ce4c43dde9"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/PickWorker/ChartRun.out",
+    "sha256": "caeb61ac10b01bf2e6044cebd316b599793eb075fb0256aa81c696e4e5c7a7ce"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/PickWorker/PickWorker.cfg",
+    "sha256": "0da0617d4459668020b0bf88a29b1eee01882c88f204728eb9a38493b60bd4b3"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/PickWorker/PickWorker.tla",
+    "sha256": "8cd92057affd06b367a85c1d87c81b827cfdfd41a2bea10989ce911ed2fd3124"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/PickWorker/chart.mmd",
+    "sha256": "5fff795e5d0da737cdf1fef95c993ea6ca45fd9f5fb61e163d2e292c40186a64"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/PickWorker/graph.dot",
+    "sha256": "1d60f0497f939134c6cb91f5e869445aa7da04ba8caad5128f1509a28c31f245"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/PickWorker/report.md",
+    "sha256": "87546454dfa4b96d15c53dbdc6eef469e0390f14b4ff1eb370d4437508f90da8"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/PickWorker/sany.out",
+    "sha256": "866b218db376118471b5635ad1b050c14552c1cc7df37d65f9a5ce5b4734dbaf"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/PickWorker/verdict-1.out",
+    "sha256": "e994e9457f86627fe3db72c80f63513931b75d192b3387b2ef6132c398780b55"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/Shadow/ChartRun.out",
+    "sha256": "e01704359d955974f20afee7ea1d5f4f120a5319c219929d747c9e9bc2c9b36d"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/Shadow/Shadow.cfg",
+    "sha256": "4f0262dfe7368f4c8df45c47e912fca78885a24053b31cd67c3b33f49e61f7a1"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/Shadow/Shadow.tla",
+    "sha256": "c7ed4c7ab82d7ed8515621d4ff88d349920cd1a4783a2ee47a71278af9dfe148"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/Shadow/ShadowLib.tla",
+    "sha256": "3590a4185a432b4fbaa867d7d717482a0d57e2374711bf3bb65244cc936bc666"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/Shadow/ShadowSub.tla",
+    "sha256": "b84408d4b14dc56402b7cc8e0e11589f8b0f7bb3dc3f1408afcc7518f3fb7f1f"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/corpus/Shadow/chart.mmd",
+    "sha256": "386fbbc905c7c89c4457a3d48f4b76bdf42861093188dc7369c32aef7b48658c"
+  }
+]

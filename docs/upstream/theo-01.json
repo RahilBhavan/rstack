@@ -1,0 +1,66 @@
+[
+  {
+    "path": "vendor/theo/LICENSE",
+    "sha256": "8095f9a9f97d074131f6a2ce09b952d12c18b36f09f4e5df0517c4e64e82c851"
+  },
+  {
+    "path": "vendor/theo/README.md",
+    "sha256": "682afc278d4a40d530fc22d2551694bcafc818cf9e056f5aa2d9afdb548333cb"
+  },
+  {
+    "path": "vendor/theo/skills/babysit-pr/SKILL.md",
+    "sha256": "fbe43ba3ab76a466a88ef8b46dca1b41fb8101347d24a396903849865173a6ac"
+  },
+  {
+    "path": "vendor/theo/skills/babysit-pr/scripts/pr-wait",
+    "sha256": "90393f85b95b78bff1b039744bdfb09dc88ff2b430e1c3df687ee6f449c97214"
+  },
+  {
+    "path": "vendor/theo/skills/council/SKILL.md",
+    "sha256": "598fb2c7cdd48ddd9643cb22999e1b624c357aa6579aa0af0e7268ae16a8a164"
+  },
+  {
+    "path": "vendor/theo/skills/file-pr/SKILL.md",
+    "sha256": "174a7ae52e3b9d17f2bd0eaf0a11a89d744d1249164ecbdb0e642359eee75b1b"
+  },
+  {
+    "path": "vendor/theo/skills/full-send/SKILL.md",
+    "sha256": "ba585e47cd901506b0e2de13025b0e39bc02462c136cf27491ad3efbdfe66020"
+  },
+  {
+    "path": "vendor/theo/skills/full-send/agents/openai.yaml",
+    "sha256": "8a1e8ce04a774a8a2e469cecf5e45a9cec4d3438b4c587cf166c2f78206390d2"
+  },
+  {
+    "path": "vendor/theo/skills/full-stop/SKILL.md",
+    "sha256": "091dcabfcba73e009ddb8e32c498a993a6bb60f8c223d3e21e917f4e52ab9939"
+  },
+  {
+    "path": "vendor/theo/skills/full-stop/agents/openai.yaml",
+    "sha256": "6029e872a883aa06aad3426ab58289df016e4b0d23485719c71152603fec7d35"
+  },
+  {
+    "path": "vendor/theo/skills/leaving-pr-comments/SKILL.md",
+    "sha256": "1d110343022d0514c101dd942286cce10d6b9f5bd5b899f5a0530620d34cd295"
+  },
+  {
+    "path": "vendor/theo/skills/leaving-pr-comments/agents/openai.yaml",
+    "sha256": "f89fa0d9ae1c3e973b3e9ecb50549faee62fd1a0e59973bade68802c74183fdb"
+  },
+  {
+    "path": "vendor/theo/skills/modernize/SKILL.md",
+    "sha256": "6172d774c46f535367086da90db1b0aaaaac969ed05ff040444f9afa9a6b1552"
+  },
+  {
+    "path": "vendor/theo/skills/modernize/agents/openai.yaml",
+    "sha256": "6675e91e10f2b264fe1a027072f6d9f46299f781011e248a5ba075fc1f764e09"
+  },
+  {
+    "path": "vendor/theo/skills/sol-loop/SKILL.md",
+    "sha256": "1db1eb4c4a156ee666070e9a12623d520cd1bd9b19c3fc21003fe5a440ba0b10"
+  },
+  {
+    "path": "vendor/theo/skills/takeover/SKILL.md",
+    "sha256": "9f00a7c67bf82603af2e80f56e9ce63f1516a1b4339365b79cf786d9d9055465"
+  }
+]

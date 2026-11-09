@@ -17,6 +17,38 @@ Use $rstack to explain this finding with a sourced visual.
 Use $rstack to work out why this skill keeps failing.
 ```
 
+## Included upstream collections
+
+This release contains the actual source files, references and license notices:
+
+| Collection | Source packages | Default discovery |
+| --- | --- | --- |
+| Matt Pocock |39|31 active;8 in-progress reference-only|
+| Poteto / Lauren Tan pstack |58|58|
+| Theo Browne tstack |9|9|
+| Rstack and the existing learning kit |6|6|
+
+Total:112 source skill packages,104 in default discovery. The eight Matt Pocock
+in-progress packages remain available as source but are excluded from normal
+routing. The pinned software-factory draft has malformed upstream YAML; it is
+preserved and documented rather than silently rewritten or reported as working.
+
+The six learning entry points are linked into client skill roots. The additional
+collections live in vendor/ and are discovered by rstack; copying them does not
+register every native slash command, activate hooks or install a Cursor plugin.
+Use author-qualified IDs to avoid collisions, for example:
+
+```sh
+.venv/bin/python rstack.py show vendor/mattpocock/tdd
+.venv/bin/python rstack.py show vendor/poteto/tdd
+.venv/bin/python rstack.py show vendor/theo/council
+```
+
+Read [the complete catalog](docs/upstream-catalog.md) and
+[compatibility notes](docs/upstream-compatibility.md). Upstream source commits and
+per-file integrity manifests are in docs/upstream-sources.json. No runtime,
+permission, model subscription or account connection is granted by these files.
+
 ## What is here
 
 - One entry point with 26 task-specific workflow plans.
@@ -38,7 +70,7 @@ Public repository: **https://github.com/RahilBhavan/rstack**. No GitHub account 
 needed to clone this public source. Paste this into your T3/Codex/Claude Code agent:
 
 ```text
-Read https://github.com/RahilBhavan/rstack at release v0.1.0, including README.md,
+Read https://github.com/RahilBhavan/rstack at release v0.2.0, including README.md,
 INSTALL_WITH_AI.md, ATTRIBUTION.md and docs/learning-bundle.md. Install the six
 allowlisted learning packages on my Mac from a reviewed checkout at
 ~/Projects/rstack. Preserve existing files, skill folders, remotes and local edits.
@@ -49,7 +81,9 @@ state, and show the exact installed commit and first skill invocation.
 Keep Full access selected. Do not request account tokens, install unrelated
 packages or run the exam factory merely to verify installation. Public cloning
 needs no GitHub sign-in. Report blocked steps separately and explain when a fresh
-provider session is needed for skill discovery.
+provider session is needed for skill discovery. Also resolve vendor/mattpocock/tdd,
+vendor/poteto/principle-prove-it-works and vendor/theo/full-stop from the bundled
+upstream sources. Do not activate upstream plugins or hooks just to install.
 ```
 
 See [INSTALL_WITH_AI.md](INSTALL_WITH_AI.md) for exact commands, update/removal
@@ -79,7 +113,7 @@ Invoke `$rstack` or ask the agent to use rstack. If a client does not discover i
 give the agent the actual path to [SKILL.md](skills/rstack/SKILL.md). It can read and
 use the same entry point directly.
 
-Rstack uses the skills already present on the host. This checkout now also includes
+Rstack uses the skills already present on the host and the pinned upstream collections above. Its six directly linked entry packages include
 the explicitly requested exam-prep and practice-exam-factory learning packages from
 Rahil's MacBook, plus the upstream socratic-tutor and learnharness skills and the study-loop that joins them. It does not bundle the rest of the installed collection or connect
 accounts. See docs/learning-bundle.md for the six-package previewable installer;
@@ -160,6 +194,6 @@ real task quality and usefulness need continued observation.
 
 The MECG guide includes a downloadable archive of this checkout with the router,
 two exam skills, two tutoring skills and the study loop. Follow [the installation and skill guide](docs/learning-bundle.md).
-Public upstream: https://github.com/RahilBhavan/rstack. The v0.1.0 release is the versioned source for AI-assisted installation. The existing rstack.py install command still links
+Public upstream: https://github.com/RahilBhavan/rstack. The v0.2.0 release is the versioned source for AI-assisted installation. The existing rstack.py install command still links
 only the router. install_learning.py explicitly manages the six allowlisted
 packages, previews by default and refuses foreign paths.

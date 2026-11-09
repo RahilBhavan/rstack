@@ -9,7 +9,7 @@ from pathlib import Path
 import yaml
 
 SKILL_DIR = Path(__file__).resolve().parents[2]
-KINDS = {"local", "system", "synced", "plugin"}
+KINDS = {"local", "system", "synced", "plugin", "vendored"}
 SKIP = {".git", "node_modules", "__pycache__", ".venv", "data", "exports", "build", "dist"}
 
 
@@ -25,6 +25,11 @@ def default_roots(project):
              (Path(project) / ".agents/skills", "local", "project"),
              (Path(project) / ".claude/skills", "local", "project-claude"),
              (SKILL_DIR.parent, "local", "rstack")]
+    vendor = SKILL_DIR.parents[1] / "vendor"
+    for category in ("engineering", "misc", "productivity"):
+        pairs.append((vendor / "mattpocock/skills" / category, "vendored", "mattpocock"))
+    for author in ("poteto", "theo"):
+        pairs.append((vendor / author / "skills", "vendored", author))
     cache = home / ".codex/plugins/cache"
     for provider in ("openai-curated-remote", "openai-primary-runtime", "openai-bundled"):
         pairs.append((cache / provider, "plugin", provider))
@@ -74,6 +79,8 @@ def namespace(path, root, name):
         return "system/" + name, "system"
     if "synced" in parts:
         return "synced/" + name, "synced"
+    if kind == "vendored":
+        return f"vendor/{root['label']}/{name}", kind
     if kind == "plugin":
         rel = path.relative_to(Path(root["path"]).resolve())
         plugin = rel.parts[0]
@@ -197,7 +204,8 @@ def find(catalog, query, limit=10):
     for entry in catalog["entries"]:
         title = set(re.findall(r"[a-z0-9]+", entry["name"].lower()))
         body = set(re.findall(r"[a-z0-9]+", entry["description"].lower()))
-        score = 4 * len(words & title) + len(words & body)
+        source = set(re.findall(r"[a-z0-9]+", (entry["id"] + " " + entry.get("root_label", "")).lower()))
+        score = 4 * len(words & title) + len(words & body) + len(words & source)
         if score:
             ranked.append((score, entry))
     ranked.sort(key=lambda pair: (-pair[0], pair[1]["id"]))

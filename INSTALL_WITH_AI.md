@@ -1,6 +1,6 @@
 # Install from GitHub with your AI
 
-Source: https://github.com/RahilBhavan/rstack. Versioned release: v0.1.0.
+Source: https://github.com/RahilBhavan/rstack. Versioned release: v0.2.0.
 
 Ask a tool-enabled coding agent to read this file, README.md, ATTRIBUTION.md,
 docs/learning-bundle.md and the installer source before executing. A chat assistant
@@ -16,12 +16,14 @@ of the checkout. Skills are instructions, not account access or a sandbox.
 2. Use `~/Projects/rstack` as a stable source directory. If absent, clone:
 
 ```sh
-git clone --branch v0.1.0 --depth 1 https://github.com/RahilBhavan/rstack.git "$HOME/Projects/rstack"
+git clone --branch v0.2.0 --depth 1 https://github.com/RahilBhavan/rstack.git "$HOME/Projects/rstack"
 ```
 
 Create the Projects parent if needed. If the target exists, inspect its origin,
 revision and working tree. Reuse only the intended matching checkout; stop on
-foreign contents or conflicts. Never delete or overwrite it to finish.
+foreign contents or conflicts. Never delete or overwrite it to finish. If it is a clean matching older release,
+fetch the specifically requested new tag, review the differences and switch to
+that tag deliberately; preserve local edits and stop on a foreign checkout.
 
 3. Record `git rev-parse HEAD` and inspect the tagged source. A tag is a readable
    release label; retain the full commit for reproducibility. Then in that folder:
@@ -61,6 +63,26 @@ A fresh client/provider session may be needed. Ask the agent to invoke `$rstack`
 or `/rstack` where that client supports it. If discovery fails, provide the actual
 checkout's skills/rstack/SKILL.md path. Do not claim menu discovery merely because
 symlinks exist. Keep T3 Full access selected as the course requests.
+
+## Discover the included upstream skills
+
+The installer links six entry packages; the checkout also holds106 upstream
+source skill packages. Rstack automatically scans31 active Matt Pocock skills,
+58 Poteto skills and9 Theo skills. Including the six entry packages, a clean
+release-only inventory has104 entries. A user's machine may have more entries
+and deliberate same-name variants. Preserve those and choose a qualified ID.
+
+```sh
+.venv/bin/python rstack.py show vendor/mattpocock/tdd
+.venv/bin/python rstack.py show vendor/poteto/principle-prove-it-works
+.venv/bin/python rstack.py show vendor/theo/full-stop
+```
+
+Ask the agent to read the returned SKILL.md and only relevant supporting files.
+The eight Matt in-progress drafts remain reference-only; their presence is not a
+compatibility claim. No upstream plugin, agent registration, hook, network service
+or recurring automation is activated by this installer. Runtime/project rules and
+exact-action permissions still govern an invoked skill. See the catalog.
 
 ## Verification receipt
 

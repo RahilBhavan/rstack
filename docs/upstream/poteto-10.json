@@ -1,0 +1,134 @@
+[
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/grid/Grid.cfg",
+    "sha256": "41d15a4d5bef6385c00b30f2126204e74a779d835d37f1ea73669afcfb579ef5"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/grid/Grid.tla",
+    "sha256": "e52e75d6fccff01cfe385140cbac3339b5820faeb1e567c7edc1267fa99f989e"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/grid/sany.out",
+    "sha256": "e42a575f90275de315767d9f46ab0881349ebc53206e191aee57501494a5aba9"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/java.ts",
+    "sha256": "4fef906fe1dcfdb98dafbd3ecdae1e82589908529ffc11b6bbdcfb8aef505932"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/labels.ts",
+    "sha256": "5a884161428fc00229d9a0e896001df4b262b56a441b6b3d66d1b59b06050650"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/messages.test.ts",
+    "sha256": "e7ca0ea446907074452df5388719598bb297d7f8ee50145b8b8f2a41c0c4c92f"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/pipeline.test.ts",
+    "sha256": "0f091c3e6e104fd545e113ad437df8d4856618a775073a37d41050ebf663e479"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/plain-tlc.test.ts",
+    "sha256": "f6b042300e66840809e26ba8fef0c7e2bc8bb6b59f3b910ea65dea176e97bf1c"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/render.test.ts",
+    "sha256": "9cb369e5f4c464ca540ccc3de4fdd76670b84e54f06955ccb46908826579ac23"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/tlc-out.test.ts",
+    "sha256": "8a87d6cf32e7225aa0c8031e61b8a2912d8fbb3847a7ec2cd76e26c14e931478"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/test/tlc.ts",
+    "sha256": "73f5cf9dca5ca55aa65d5b342405e31f6eff858ed2bc2124c3e3fbb328259cca"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/tsconfig.json",
+    "sha256": "6bb2af53f7b251328e6117cd4fb761468dc4d4b96085d31a19304ccb73c32cc1"
+  },
+  {
+    "path": "vendor/poteto/skills/statechart/scripts/worker.ts",
+    "sha256": "1f18ed5ef806982e05e8a40fc217e88257700b28b63cb4acbd647872f85f782b"
+  },
+  {
+    "path": "vendor/poteto/skills/swarm/SKILL.md",
+    "sha256": "fea6bfbbf21e067a4e2d2ebab034bc3af508118e9df1abc9d2ba040d58a6df3a"
+  },
+  {
+    "path": "vendor/poteto/skills/tdd/SKILL.md",
+    "sha256": "eeb868e2dfebee528d730a67d7b17498fac4bb85dec2e38bc5c5176aca4d5d2f"
+  },
+  {
+    "path": "vendor/poteto/skills/teach/SKILL.md",
+    "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4"
+  },
+  {
+    "path": "vendor/poteto/skills/technical-writing/SKILL.md",
+    "sha256": "61fe9c424a798ebf36ad94941f87be049cb8827bdf86d21474a0dde37b513c43"
+  },
+  {
+    "path": "vendor/poteto/skills/typescript-best-practices/SKILL.md",
+    "sha256": "ec1dac086d3708e5940d45d250c30a37dd953b4e3cb2ca0692f5851d7a039e27"
+  },
+  {
+    "path": "vendor/poteto/skills/typescript-best-practices/references/patterns.md",
+    "sha256": "12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77"
+  },
+  {
+    "path": "vendor/poteto/skills/unslop/SKILL.md",
+    "sha256": "ccab208e315ce05e2fab8eeee2f7879f1289b5c6844840b2d307adf31c79144f"
+  },
+  {
+    "path": "vendor/poteto/skills/why/SKILL.md",
+    "sha256": "144d42e7712723d763e607bc0a969e5f1cdf83ec7228519d87677cc534571bed"
+  },
+  {
+    "path": "vendor/poteto/skills/why/references/epistemics.md",
+    "sha256": "d54a2361b2d5973bc3fe2edf62f446d87935974d4b40d47f23b9529f956ca758"
+  },
+  {
+    "path": "vendor/poteto/skills/why/references/investigator-prompt.md",
+    "sha256": "c44afba186f899094f3694e6c9d6de5d14ff7c4ce28b787a9f50fc789c9a7fc3"
+  },
+  {
+    "path": "vendor/poteto/skills/why/references/source-playbook.md",
+    "sha256": "9ae9dcb9d09111c9facc68510331c5aba4aed9b1b057314ff1fc0e166ad3993a"
+  },
+  {
+    "path": "vendor/poteto/skills/why/references/sources/code-archaeology.md",
+    "sha256": "a4a3970e9db448054aed676f3f7feeee667b4b69f0bd57c8fd72b751be687cc7"
+  },
+  {
+    "path": "vendor/poteto/skills/why/references/sources/databricks.md",
+    "sha256": "236ede7aab6454662a992db088a5393537a5233a4c26719c93188f9e174488f6"
+  },
+  {
+    "path": "vendor/poteto/skills/why/references/sources/datadog.md",
+    "sha256": "b139faac5dc11b8f26c8255dce6033c1a6ac143b038d3dd103f2034c5dbec9cd"
+  },
+  {
+    "path": "vendor/poteto/skills/why/references/sources/incident-postmortem.md",
+    "sha256": "bf2661f1a81c37700884a45b77d6289be0c802b065febced31990e6564510839"
+  },
+  {
+    "path": "vendor/poteto/skills/why/references/sources/linear.md",
+    "sha256": "01304e7f1badfcfb78babbb0edcadeb3cc8dd3f713793420cdff24ba190f907c"
+  },
+  {
+    "path": "vendor/poteto/skills/why/references/sources/notion.md",
+    "sha256": "3bcfa695c49dfad4ac036d5d7181c12585f55ac04f1936198d16ab75a2788997"
+  },
+  {
+    "path": "vendor/poteto/skills/why/references/sources/sentry.md",
+    "sha256": "2d4f83048eac1df530b399e2aed75dd7c9c18577b7665420aaeb96d0ceb0b702"
+  },
+  {
+    "path": "vendor/poteto/skills/why/references/sources/slack.md",
+    "sha256": "3bc6309f5c7b26ace3b919dbd7f7b048861dd2020f910fe24f656cc74b3b661c"
+  },
+  {
+    "path": "vendor/poteto/skills/why/references/synthesizer-prompt.md",
+    "sha256": "11c62671aa7b7a6e3d36929ffe2b59bf95e6ca664eee4d93e6ee527dd3390ddb"
+  }
+]
