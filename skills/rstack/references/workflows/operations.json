@@ -1,0 +1,234 @@
+{
+  "career": {
+    "outcome": "Prepare truthful, role-specific career work.",
+    "skills": [
+      {
+        "name": "pm-portfolio-planner",
+        "when": "An open PM/APM role census or portfolio coverage plan was requested."
+      },
+      {
+        "name": "recruiting-prep",
+        "when": "Role-specific interview preparation or project evidence work."
+      },
+      {
+        "name": "networking-os",
+        "when": "Relationship research, history or controlled outreach workflow."
+      },
+      {
+        "name": "application-review",
+        "when": "Reviewing an application through its intended harness."
+      }
+    ],
+    "inputs": [
+      "Employer requirements, eligibility, user contribution evidence and actual attempts."
+    ],
+    "steps": [
+      "Refresh time-sensitive employer evidence.",
+      "Map requirements to real proof and gaps.",
+      "Prepare the smallest practice/project/draft that addresses the gap."
+    ],
+    "check": "Check eligibility, authorship, source dates and a fresh practice attempt where learning matters.",
+    "stop": "Requested preparation is checked; hiring outcomes remain unknown.",
+    "boundary": "No application submission, outreach send or fabricated contribution."
+  },
+  "learn": {
+    "outcome": "Help the user close one demonstrated understanding gap.",
+    "skills": [
+      {
+        "name": "explainer",
+        "when": "Explain the diagnosed gap in a useful format."
+      },
+      {
+        "name": "exam-prep",
+        "when": "The user requests course/exam preparation using its intended environment."
+      },
+      {
+        "name": "recruiting-prep",
+        "when": "Learning is role-specific interview preparation."
+      },
+      {
+        "name": "capture-account-evidence",
+        "when": "Authorized coursework sources need browser intake."
+      }
+    ],
+    "inputs": [
+      "Rubric/original material and user's unaided attempt; label the diagnosis unknown if absent."
+    ],
+    "steps": [
+      "Identify one gap from the attempt or prepare a short diagnostic.",
+      "Teach that gap using the source evidence.",
+      "Prepare a fresh unaided check without treating generated answers as mastery."
+    ],
+    "check": "Observe a fresh human attempt against a rubric; agent output is preparation evidence.",
+    "stop": "Targeted help and fresh check prepared, or actual attempt establishes the intended learning.",
+    "boundary": "Local preparation within the existing task authorization."
+  },
+  "calendar": {
+    "outcome": "Prepare or perform authorized changes to Rahil's calendar.",
+    "skills": [
+      {
+        "name": "vital-calendar",
+        "when": "Rahil's planning, cleanup, style or rescheduling."
+      },
+      {
+        "name": "plan-personal-week",
+        "when": "Capacity, inventory, dedupe and time-blocking mechanics."
+      },
+      {
+        "name": "calendar-invite-transfer",
+        "when": "Selected personal-to-school invitation transfer was requested."
+      }
+    ],
+    "inputs": [
+      "Calendar of record, source dates/timezones, fixed commitments and task dependencies."
+    ],
+    "steps": [
+      "Read current vital-calendar rules.",
+      "Inventory and dedupe; back up before authorized deletion.",
+      "Write only actions authorized by this request and read them back."
+    ],
+    "check": "Preserve stable identities, source timezones, required commitments and duplicate/retry safety.",
+    "stop": "Requested authorized change is read back, or preparation is ready pending a genuine action gate.",
+    "boundary": "Only vital commitments/concrete required tasks. No filler or touching others' events."
+  },
+  "network": {
+    "outcome": "Operate relationship research and draft preparation through Networking OS.",
+    "skills": [
+      {
+        "name": "networking-os",
+        "when": "Canonical intake, research, history, drafts and recoverable jobs."
+      },
+      {
+        "name": "outreach-email",
+        "when": "Writing one recipient's message in its supported harness."
+      }
+    ],
+    "inputs": [
+      "Canonical relationship record, exact evidence and selected recipient context."
+    ],
+    "steps": [
+      "Use current hub/account access gates.",
+      "Draft with truthful personal evidence and relevant relationship history.",
+      "Keep exact send authorization separate from selection."
+    ],
+    "check": "Check recipient identity, claims, thread context and exact draft revision.",
+    "stop": "Checked preparation or separately authorized send is reconciled.",
+    "boundary": "No outbound send without the exact message's required authorization."
+  },
+  "capture": {
+    "outcome": "Import authorized source evidence with provenance.",
+    "skills": [
+      {
+        "name": "capture-account-evidence",
+        "when": "Selected Canvas or Instagram intake through a logged-in browser."
+      },
+      {
+        "name": "cross-host-control",
+        "when": "Capture needs the exercised Mac route."
+      },
+      {
+        "name": "notes-index",
+        "when": "Local notes retrieval/index work was requested."
+      }
+    ],
+    "inputs": [
+      "Authorized account/sender/course scope, raw source and destination contract."
+    ],
+    "steps": [
+      "Read source scope and current access limitations.",
+      "Capture/import through the owning workflow.",
+      "Retain source identity, freshness and access gaps."
+    ],
+    "check": "Exercise duplicate input, retry and restart for processing/persistence.",
+    "stop": "Selected scope captured or precise access limit recorded.",
+    "boundary": "No posting, submissions or broad account collection implied."
+  },
+  "fitness": {
+    "outcome": "Prepare evidence-based vegetarian training and nutrition guidance.",
+    "skills": [
+      {
+        "name": "gym-coach",
+        "when": "Coaching from selected Orbit/Hevy observations."
+      },
+      {
+        "name": "orbit-fitness-build",
+        "when": "User requests Orbit Fitness engineering rather than coaching."
+      },
+      {
+        "name": "verify-orbit-fitness",
+        "when": "Verifying an engineering change."
+      }
+    ],
+    "inputs": [
+      "Selected observations, user goals and current training/food constraints."
+    ],
+    "steps": [
+      "Choose coaching or engineering by the requested outcome.",
+      "Check sources and use the owning project workflow.",
+      "Return concrete guidance or an exercised implementation."
+    ],
+    "check": "Actual selected observations support recommendations; app changes pass project behavior checks.",
+    "stop": "Requested preparation complete with medical/platform limits stated.",
+    "boundary": "No autonomous account/calendar change or medical treatment."
+  },
+  "host": {
+    "outcome": "Carry out scoped host or cross-host work.",
+    "skills": [
+      {
+        "name": "cross-host-control",
+        "when": "Work spans box and Mac; run the documented link diagnosis first."
+      },
+      {
+        "name": "omarchy",
+        "when": "Changing Linux desktop, Hyprland or listed terminal configuration."
+      },
+      {
+        "name": "diagnose-crash",
+        "when": "Investigating a process core dump."
+      },
+      {
+        "name": "wizard",
+        "when": "A human-only provisioning/credential/dashboard step truly cannot be automated."
+      }
+    ],
+    "inputs": [
+      "Target host, requested change, current configuration and authorized access."
+    ],
+    "steps": [
+      "Use the host's real access route and instructions.",
+      "Prepare a reversible scoped change.",
+      "Exercise the requested behavior on that host."
+    ],
+    "check": "Observe behavior on the actual host; box access does not prove Mac desktop control.",
+    "stop": "Requested change checked or exact host/access gap remains.",
+    "boundary": "No new external-action authority from host access."
+  },
+  "project-loop": {
+    "outcome": "Run a named project's existing bounded implementation workflow.",
+    "skills": [
+      {
+        "name": "orbit-implementation-loop",
+        "when": "Explicitly implementing/resuming Orbit's Canvas/JARVIS quality plan."
+      },
+      {
+        "name": "applier-improvement-loop",
+        "when": "Explicitly improving the application-preparation extension offline."
+      },
+      {
+        "name": "orbit-fitness-build",
+        "when": "Implementing Orbit Fitness engineering."
+      }
+    ],
+    "inputs": [
+      "The owning project's current plan, frozen limits, state and real checkout."
+    ],
+    "steps": [
+      "Read the named project workflow before execution.",
+      "Reconcile active tasks and inherited repair limits.",
+      "Advance eligible authorized slices with actual proof."
+    ],
+    "check": "Use owning verification and milestone review; retain human/platform gates.",
+    "stop": "Owning workflow's acceptance, attempt limit or concrete blocking condition.",
+    "boundary": "No general rstack invocation starts a standing loop or authorizes live applications."
+  }
+}

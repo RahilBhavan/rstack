@@ -1,0 +1,262 @@
+{
+  "research": {
+    "outcome": "Answer a bounded question from current, attributable evidence.",
+    "skills": [
+      {
+        "name": "research",
+        "when": "General primary-source research with a repository brief."
+      },
+      {
+        "name": "social-research",
+        "when": "Understanding videos/reels/social sources."
+      },
+      {
+        "name": "notes-index",
+        "when": "The question concerns prior local work or decisions."
+      },
+      {
+        "name": "openai-docs",
+        "when": "The question concerns OpenAI/Codex products or setup."
+      }
+    ],
+    "inputs": [
+      "Exact question, original sources, freshness needs and intended decision."
+    ],
+    "steps": [
+      "Choose the appropriate source route.",
+      "Inspect original passages, contradictory evidence and access gaps.",
+      "Return the answer with direct sources and limitations."
+    ],
+    "check": "Every material claim matches inspected evidence; inaccessible is distinct from absent.",
+    "stop": "Bounded question answered or exact missing source prevents it.",
+    "boundary": "Local preparation within the existing task authorization."
+  },
+  "interface": {
+    "outcome": "Design or improve an interface under its owning identity.",
+    "skills": [
+      {
+        "name": "design-system-workflow",
+        "when": "Any app/site interface or design-system task."
+      },
+      {
+        "name": "rahil-design",
+        "when": "Rahil's own public project, personal website or explainer."
+      },
+      {
+        "name": "web-designer-pro",
+        "when": "A full website build; do not pair with art-director by default."
+      },
+      {
+        "name": "app-designer-pro",
+        "when": "Native/mobile application design."
+      },
+      {
+        "name": "art-director",
+        "when": "A single page/section needs art direction."
+      },
+      {
+        "name": "impeccable",
+        "when": "Focused existing-interface UX polish or refinement."
+      },
+      {
+        "name": "design-qa-checklist",
+        "when": "Implementation needs design-to-build QA."
+      }
+    ],
+    "inputs": [
+      "User task, states, platform and current project identity/instructions."
+    ],
+    "steps": [
+      "Read owning DESIGN.md and global design routing when present.",
+      "Choose one lead design skill; use other skills only for a concrete gap.",
+      "Exercise empty, loading, error and success states at real use sizes."
+    ],
+    "check": "Inspect actual implementation and task behavior, accessibility and responsive states.",
+    "stop": "Requested interface is reviewed with platform limits stated; rendered drafts retain design gates.",
+    "boundary": "Local preparation within the existing task authorization."
+  },
+  "figure": {
+    "outcome": "Explain one defensible finding in a truthful, legible figure.",
+    "skills": [
+      {
+        "name": "present-data",
+        "when": "Choosing form and checking the reader, point and container."
+      },
+      {
+        "name": "rahil-design",
+        "when": "Rahil's own public visual."
+      },
+      {
+        "name": "research-exhibit",
+        "when": "Producing a Rahil Bhavan Research exhibit with Proof Desk."
+      },
+      {
+        "name": "tufte-graphics",
+        "when": "Quantitative integrity, form and ink."
+      },
+      {
+        "name": "dataviz",
+        "when": "Colour, contrast, labeling and interaction."
+      },
+      {
+        "name": "anatomy",
+        "when": "An interactive physical-object mechanism explanation is appropriate."
+      },
+      {
+        "name": "explainer",
+        "when": "The task is to teach or explain the mechanism."
+      }
+    ],
+    "inputs": [
+      "Original data/source definitions, one finding, audience, format and design owner."
+    ],
+    "steps": [
+      "State the finding before selecting a form.",
+      "Use the owning renderer and record numbers' receipts.",
+      "Inspect exact export at full and feed size with its surrounding copy."
+    ],
+    "check": "Check factual fidelity, numerical integrity, actual-size legibility and applicable design receipts.",
+    "stop": "Checked artifact returned; outstanding required review leaves design review pending.",
+    "boundary": "Drafting/rendering does not authorize publication. Client and private-app identities retain authority."
+  },
+  "video": {
+    "outcome": "Produce a locally rendered video with a clear purpose.",
+    "skills": [
+      {
+        "name": "motion-director",
+        "when": "A video starts from an idea without real product assets."
+      },
+      {
+        "name": "launchr",
+        "when": "A launch/demo uses actual logos, screenshots or product photos."
+      },
+      {
+        "name": "rahil-design",
+        "when": "Personal-brand media."
+      },
+      {
+        "name": "imagegen",
+        "when": "An AI-generated bitmap is needed and requested scope supports it."
+      }
+    ],
+    "inputs": [
+      "Message, audience, real assets when applicable, duration and owning identity."
+    ],
+    "steps": [
+      "Choose motion-director or launchr from the actual inputs.",
+      "Render locally and inspect playback, sound and readability.",
+      "Return the MP4 and actual checks."
+    ],
+    "check": "Watch the exact export and inspect real-size text, timing and audio.",
+    "stop": "Requested draft meets brief or missing assets prevent it.",
+    "boundary": "No publishing, store submission or asset rights inferred from local availability."
+  },
+  "presentation": {
+    "outcome": "Build a clear, source-grounded presentation that survives real viewing.",
+    "skills": [
+      {
+        "name": "presentation-craft",
+        "when": "Storyline, exhibits, notes and substantive craft."
+      },
+      {
+        "name": "consulting-slides",
+        "when": "Rahil Workshop Slides is the requested identity."
+      },
+      {
+        "name": "present-data",
+        "when": "Numbers, tables or figures are presented."
+      },
+      {
+        "name": "presentations",
+        "when": "Authoring an editable presentation artifact; resolve the managed entry ID."
+      }
+    ],
+    "inputs": [
+      "Audience, decision/learning objective, time, original evidence and reference deck."
+    ],
+    "steps": [
+      "Choose the storyline and owning design system.",
+      "Use the correct authoring skill for native Google Slides or deck files.",
+      "Render/inspect slides, sources and speaker notes."
+    ],
+    "check": "Check claim fidelity, editable exhibits, layout, contrast and presentation-size legibility.",
+    "stop": "Requested deck and actual render checks delivered; native-platform limits remain visible.",
+    "boundary": "Local preparation within the existing task authorization."
+  },
+  "post": {
+    "outcome": "Prepare one sourced personal or client X package.",
+    "skills": [
+      {
+        "name": "x-post-production",
+        "when": "Production, copy/visual checks and package evidence."
+      },
+      {
+        "name": "x-growth",
+        "when": "Personal @Bhavanzim copy, profile or analytics."
+      },
+      {
+        "name": "strategy-software-social",
+        "when": "Strategy software client account and brand."
+      },
+      {
+        "name": "strategy-treasury-social",
+        "when": "Strategy Bitcoin treasury account and facts."
+      },
+      {
+        "name": "strategy-post-loop",
+        "when": "User asks to improve the Strategy software post bank."
+      },
+      {
+        "name": "rahil-design",
+        "when": "Personal public visual; client brands remain separate."
+      }
+    ],
+    "inputs": [
+      "Account, source passages, freshness, artifact identity and actual factual limits."
+    ],
+    "steps": [
+      "Select the account owner before drafting.",
+      "Follow production's bounded copy/visual review.",
+      "Return exact packet, receipts and remaining holds."
+    ],
+    "check": "Review facts, copy, alt and exact feed crop together.",
+    "stop": "Draft packet checked or explicit fact/design hold remains.",
+    "boundary": "No publishing or package substitution from an rstack invocation."
+  },
+  "weekly-content": {
+    "outcome": "Prepare the explicitly requested weekly content batch.",
+    "skills": [
+      {
+        "name": "x-weekly-pack",
+        "when": "The coming week's personal X pack was requested."
+      },
+      {
+        "name": "x-post-production",
+        "when": "Production and package review stages."
+      },
+      {
+        "name": "x-growth",
+        "when": "Personal account facts and metrics."
+      },
+      {
+        "name": "grokbot-handoff",
+        "when": "User explicitly asks to deliver checked packages to the Mac Bot."
+      },
+      {
+        "name": "cross-host-control",
+        "when": "The authorized work spans box and Mac."
+      }
+    ],
+    "inputs": [
+      "Current accepted schedule, dated sources, account identity and active package contract."
+    ],
+    "steps": [
+      "Read current schedule decisions rather than assuming an old cadence.",
+      "Prepare slots under the weekly workflow and shared production limits.",
+      "Hand off only through the separately authorized delivery workflow."
+    ],
+    "check": "Exact package/schedule identities, source agreement and required design receipts.",
+    "stop": "Requested batch or authorized handoff completes; report missing Bot/provider/platform evidence.",
+    "boundary": "No recurring schedule, activation or publication implied."
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "rstack"
+  short_description: "Compose your skills into work you can verify"
+  default_prompt: "Use $rstack to choose the right skills for this task and verify the result."

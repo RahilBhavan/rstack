@@ -1,0 +1,286 @@
+{
+  "build": {
+    "outcome": "Implement the smallest end-to-end change that satisfies the request.",
+    "skills": [
+      {
+        "name": "outcome-prompt",
+        "when": "Substantive work; preserve an existing accepted contract."
+      },
+      {
+        "name": "codebase-design",
+        "when": "A module interface or seam needs design."
+      },
+      {
+        "name": "domain-modeling",
+        "when": "Terminology or a domain decision changes."
+      },
+      {
+        "name": "tdd",
+        "when": "Test-first work was requested or the project requires it."
+      },
+      {
+        "name": "principle-boundary-discipline",
+        "when": "External input or framework wiring changes."
+      },
+      {
+        "name": "principle-type-system-discipline",
+        "when": "The language is statically typed."
+      },
+      {
+        "name": "typescript-best-practices",
+        "when": "Reading or editing TypeScript."
+      },
+      {
+        "name": "principle-make-operations-idempotent",
+        "when": "The path can retry, duplicate or restart."
+      },
+      {
+        "name": "create-verification-skill",
+        "when": "No existing project behavior-verification skill exists."
+      }
+    ],
+    "inputs": [
+      "Current project instructions, issue/spec and baseline behavior."
+    ],
+    "steps": [
+      "Establish data shape, interface and acceptance before wiring.",
+      "Implement one complete path.",
+      "Use the project verification skill; select one suitable review if required."
+    ],
+    "check": "Exercise the real interface and relevant regressions. Include retry, duplicate and restart checks for persistence.",
+    "stop": "Acceptance passes, or a concrete missing prerequisite/permission blocks the next step. A build does not imply PR or merge authority.",
+    "boundary": "Local preparation within the existing task authorization."
+  },
+  "debug": {
+    "outcome": "Find and repair the mechanism behind an observed failure.",
+    "skills": [
+      {
+        "name": "diagnosing-bugs",
+        "when": "A failure or measured slowdown needs diagnosis."
+      },
+      {
+        "name": "diagnose-crash",
+        "when": "A process produced a core dump on this machine."
+      },
+      {
+        "name": "principle-make-operations-idempotent",
+        "when": "The defect concerns retries or lifecycle recovery."
+      }
+    ],
+    "inputs": [
+      "Exact reproduction, expected/actual behavior, logs and authoritative checkout."
+    ],
+    "steps": [
+      "Reproduce on the user-facing interface.",
+      "Eliminate hypotheses with runtime evidence.",
+      "Repair the proven cause and replay the original case."
+    ],
+    "check": "Original failing input now passes and relevant nearby behavior is exercised.",
+    "stop": "Root cause verified or evidence/access missing; no speculative fixes.",
+    "boundary": "Local preparation within the existing task authorization."
+  },
+  "spec": {
+    "outcome": "Turn the chosen idea into a buildable, falsifiable specification.",
+    "skills": [
+      {
+        "name": "product-manager",
+        "when": "Ordinary feature specification or scope clarification."
+      },
+      {
+        "name": "prd-loop",
+        "when": "A project idea has survived idea-teardown and needs the full reviewed project plan."
+      },
+      {
+        "name": "grilling",
+        "when": "User explicitly requests an interview or stress test."
+      },
+      {
+        "name": "to-tickets",
+        "when": "Ticket decomposition was requested; check tracker write authorization."
+      },
+      {
+        "name": "wayfinder",
+        "when": "The plan spans more than one session and decision mapping is requested."
+      }
+    ],
+    "inputs": [
+      "Original brief, intended user, evidence, constraints and chosen project."
+    ],
+    "steps": [
+      "Select product-manager or prd-loop according to scope.",
+      "Resolve consequential uncertainty using sources before questions.",
+      "Write non-goals, acceptance, dependencies and first slice."
+    ],
+    "check": "Trace original constraints to falsifiable acceptance criteria and actual checks.",
+    "stop": "Specification meets scope; preserve the selected leaf workflow's build/read-back gates.",
+    "boundary": "Tracker publication and implementation retain their actual authorization; broad rstack setup is not a standing grant."
+  },
+  "review": {
+    "outcome": "Review the requested artifact against its actual contract.",
+    "skills": [
+      {
+        "name": "code-review",
+        "when": "A diff since a fixed point or PR needs Standards and Spec review."
+      },
+      {
+        "name": "code-reviewer",
+        "when": "A whole-codebase prove-and-fix audit was requested."
+      },
+      {
+        "name": "contest-audit",
+        "when": "A smart-contract contest/security audit was requested."
+      },
+      {
+        "name": "sol-loop",
+        "when": "User requests a Sol second opinion or delivery workflow selects it."
+      },
+      {
+        "name": "council",
+        "when": "User explicitly requests council or a multi-provider review."
+      }
+    ],
+    "inputs": [
+      "Exact artifact revision, baseline, specification and raw verification evidence."
+    ],
+    "steps": [
+      "Choose one review workflow matching scope.",
+      "Verify findings with concrete source or reproductions.",
+      "Retain dispositions, dissent and uncovered scope."
+    ],
+    "check": "Findings identify exact affected behavior and evidence; required providers actually participated.",
+    "stop": "One shared repair allowance when applicable, then the prescribed verification. Do not stack review panels by default.",
+    "boundary": "Local preparation within the existing task authorization."
+  },
+  "deliver": {
+    "outcome": "Reach the explicitly requested PR endpoint.",
+    "skills": [
+      {
+        "name": "file-pr",
+        "when": "Only PR filing or description update was requested."
+      },
+      {
+        "name": "full-stop",
+        "when": "User requests end-to-end PR readiness without merging."
+      },
+      {
+        "name": "full-send",
+        "when": "User explicitly authorizes autonomous merging."
+      },
+      {
+        "name": "babysit-pr",
+        "when": "An existing PR needs monitoring."
+      },
+      {
+        "name": "modernize",
+        "when": "An old PR needs reassessment and rebase."
+      },
+      {
+        "name": "takeover",
+        "when": "The user asks to finish someone else's PR or thread."
+      },
+      {
+        "name": "leaving-pr-comments",
+        "when": "Posting an authorized comment or review reply."
+      }
+    ],
+    "inputs": [
+      "Original intent, exact branch/head, existing task ownership and external-action authority."
+    ],
+    "steps": [
+      "Choose the requested lifecycle endpoint.",
+      "Follow leaf proof, review, attribution and T3 linking/watching rules.",
+      "Preserve protections and existing merge gates."
+    ],
+    "check": "Check exact-head tests, reviews and merge eligibility; local CI is not a hosted check.",
+    "stop": "Requested endpoint reached or a concrete gate remains; reconcile and unwatch on handoff.",
+    "boundary": "No merge from a generic build request. No message send from draft formatting."
+  },
+  "verify": {
+    "outcome": "Establish behavior proof through the project's real interface.",
+    "skills": [
+      {
+        "name": "create-verification-skill",
+        "when": "The project lacks a behavior verification workflow."
+      },
+      {
+        "name": "maintain-verification-skill",
+        "when": "User asks to audit/refresh a drifted verification map."
+      },
+      {
+        "name": "verify-operations-hub",
+        "when": "Verifying the private operations hub."
+      },
+      {
+        "name": "verify-orbit-fitness",
+        "when": "Verifying Orbit Fitness."
+      }
+    ],
+    "inputs": [
+      "Project start/drive commands, acceptance, isolated fixtures and exact artifact."
+    ],
+    "steps": [
+      "Use the owning project verification skill before a generator.",
+      "Run actual user paths in isolation.",
+      "Save observations and platform limitations."
+    ],
+    "check": "Observe behavior, persistence and relevant failure/retry cases through interfaces.",
+    "stop": "Requested features exercised or exact unavailable platform/tool named.",
+    "boundary": "Local preparation within the existing task authorization."
+  },
+  "resume": {
+    "outcome": "Recover current task state without duplicating active work.",
+    "skills": [
+      {
+        "name": "context-compaction",
+        "when": "Long work needs a factual checkpoint or compaction recovery."
+      },
+      {
+        "name": "notes-index",
+        "when": "Past decisions or notes need source retrieval."
+      },
+      {
+        "name": "takeover",
+        "when": "Taking over another owner's task/PR is explicitly requested."
+      }
+    ],
+    "inputs": [
+      "Current artifacts, task IDs, pending gates, source versions and attempt limits."
+    ],
+    "steps": [
+      "Read current state and reconcile execution ownership.",
+      "Open source passages behind historical decisions.",
+      "Resume only the remaining authorized work."
+    ],
+    "check": "Current checkout and artifacts agree with checkpoint; uncertain active runs remain owned.",
+    "stop": "Next eligible slice is known or ownership/evidence blocks progress.",
+    "boundary": "Local preparation within the existing task authorization."
+  },
+  "improve-skill": {
+    "outcome": "Locate and evaluate a workflow failure before changing its guidance.",
+    "skills": [
+      {
+        "name": "skill-step-eval",
+        "when": "A named skill or workflow behaves unreliably."
+      },
+      {
+        "name": "skill-creator",
+        "when": "Creating or editing the skill after the problem is established."
+      },
+      {
+        "name": "skill-installer",
+        "when": "Installation from a curated source/repo was requested."
+      }
+    ],
+    "inputs": [
+      "Named skill, representative raw input, baseline output and failing acceptance."
+    ],
+    "steps": [
+      "Map observable steps and identify the earliest weak step.",
+      "Follow the evaluator's frozen development/test split and permitted trial budget.",
+      "Evaluate the smallest repair and preserve failures."
+    ],
+    "check": "Compare actual held-out behavior; structural checks alone do not prove better decisions.",
+    "stop": "The leaf evaluator's bounded protocol completes or available authority/resources are insufficient.",
+    "boundary": "Local preparation within the existing task authorization."
+  }
+}

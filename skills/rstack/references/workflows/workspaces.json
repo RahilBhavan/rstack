@@ -1,0 +1,110 @@
+{
+  "document": {
+    "outcome": "Create or edit the requested document with the appropriate authoring surface.",
+    "skills": [
+      {
+        "name": "documents",
+        "when": "Word/Google Docs-targeted file artifact authoring."
+      },
+      {
+        "name": "spreadsheets",
+        "when": "Spreadsheet files, formulas, recalculation or analysis."
+      },
+      {
+        "name": "presentations",
+        "when": "Presentation file/deck authoring."
+      },
+      {
+        "name": "pdf",
+        "when": "PDF reading, creation, forms or layout verification; resolve any variant."
+      },
+      {
+        "name": "excel-live-control",
+        "when": "An established connected live Excel task is explicitly requested."
+      },
+      {
+        "name": "google-drive",
+        "when": "A connected native Drive/Docs/Sheets/Slides task."
+      }
+    ],
+    "inputs": [
+      "Actual file or connected session, requested edits, target format and source evidence."
+    ],
+    "steps": [
+      "Select file artifact, native workspace or live session before choosing the leaf.",
+      "Use that leaf's authoring and render/recalculation requirements.",
+      "Return exact output and checks."
+    ],
+    "check": "Render/inspect documents; recalculate and validate spreadsheet values/formulas; inspect editable slides.",
+    "stop": "Requested artifact checked or exact unsupported session/tool is named.",
+    "boundary": "Local preparation within the existing task authorization."
+  },
+  "workspace": {
+    "outcome": "Operate a connected workspace using its task-specific plugin skill.",
+    "skills": [
+      {
+        "name": "google-drive",
+        "when": "Drive is the entry point for connected Drive/Docs/Sheets/Slides work."
+      },
+      {
+        "name": "plugin-management",
+        "when": "An explicitly needed integration is unavailable and plugin discovery is requested/useful."
+      },
+      {
+        "name": "notion-research-documentation",
+        "when": "Research across Notion sources."
+      },
+      {
+        "name": "notion-knowledge-capture",
+        "when": "Save durable supplied knowledge into Notion."
+      },
+      {
+        "name": "write-page",
+        "when": "User requests saving/editing Page content."
+      },
+      {
+        "name": "sites",
+        "when": "User requests building/managing a Site through Sites."
+      }
+    ],
+    "inputs": [
+      "Named service, actual tools, selected sources/destination and requested operation."
+    ],
+    "steps": [
+      "Find the exact plugin skill with catalog search.",
+      "Check live tool availability; cached manifests do not connect accounts.",
+      "Use the relevant leaf and its exact scope."
+    ],
+    "check": "Read back the actual authorized result through the connector.",
+    "stop": "Requested change/answer checked or exact missing integration remains.",
+    "boundary": "Reading a page does not authorize saving/reorganizing; no new sharing or recurring jobs implied."
+  },
+  "pet": {
+    "outcome": "Operate an explicitly requested ChatGPT animated pet.",
+    "skills": [
+      {
+        "name": "create-pet",
+        "when": "Create a new ChatGPT Work animated pet."
+      },
+      {
+        "name": "pets",
+        "when": "List, inspect, select or delete an established ChatGPT pet."
+      },
+      {
+        "name": "update-pet",
+        "when": "Repair/update an existing ChatGPT pet."
+      }
+    ],
+    "inputs": [
+      "Explicit ChatGPT pet context, selected character/assets and live plugin tools."
+    ],
+    "steps": [
+      "Choose the operation-specific pet skill.",
+      "Follow exact sprite/animation validation and plugin contract.",
+      "Verify the authorized library/activation result."
+    ],
+    "check": "Use the leaf's animation states, directions and live result checks.",
+    "stop": "Requested pet operation checked or missing tool/assets named.",
+    "boundary": "Do not route real-world pets or another app's mascot into ChatGPT Pets."
+  }
+}
