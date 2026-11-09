@@ -37,8 +37,10 @@ No legal clearance, complete dependency license audit or ownership proof is clai
 
 ## What a release contains
 
-This repository contains the original rstack composition layer, not a copy of
-the inventoried third-party packages, private source evidence, accounts or assets.
+This repository contains the original rstack composition layer plus the five
+allowlisted leaf packages named in the learning-bundle extension below. It does
+not copy the rest of the inventoried third-party packages, private source evidence,
+accounts or assets.
 The manifest inventory, preferences, personal machine paths, test runs and source
 repair backup are local state and are ignored by Git.
 
@@ -47,3 +49,7 @@ relicense anything referenced by the catalog or located outside this repository.
 Any future vendor/leaf bundle needs its own explicit allowlist, source revisions,
 license review and privacy review before distribution. Personal account permissions,
 client assets and historical action authorizations do not transfer to another user.
+
+## Explicit learning-bundle extension — November 9, 2026
+
+Rahil explicitly requested adding his MacBook exam skills and documenting their installation. The same day he asked to add Jane Street's `socratic-tutor` (MIT) and to combine it with LearnHarness's `learnharness` data-reader skill (AGPL-3.0-only). He then asked for a loop that improves on them; `study-loop` is original rstack work under the root MIT license and leaves the vendored packages unedited. The release allowlist for this extension is only `rstack`, `exam-prep`, `practice-exam-factory`, `socratic-tutor`, `learnharness` and `study-loop`. The four imported leaf bundles are preserved byte-for-byte, with adjacent SOURCE records and per-file hash manifests (`docs/exam-source-manifest.json`, `docs/tutor-source-manifest.json`, the latter with upstream commits). `learnharness` keeps its own AGPL-3.0 LICENSE and is distributed unmodified as a separate work; the root MIT license does not cover it. Inspection covered all selected files for course inputs and embedded account material; no course files, answers, account data, vendor cache or purchased design package was copied. No independent chain-of-title certification is claimed; preserve all original notices and external dependency terms. This explicit owner-requested extension supersedes the earlier router-only release description for these four named packages only. The rest of the installed catalog remains referenced in place.

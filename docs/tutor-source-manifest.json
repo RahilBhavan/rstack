@@ -1,0 +1,51 @@
+{
+  "source": "Upstream GitHub checkouts; selected skill directories only",
+  "checked": "2026-11-09",
+  "upstreams": {
+    "socratic-tutor": {
+      "repo": "https://github.com/janestreet/agent_skills",
+      "commit": "7c6715c29548a3b39d4a9545c698ee4fd17a7213",
+      "license": "MIT"
+    },
+    "learnharness": {
+      "repo": "https://github.com/amosblomqvist/learnharness",
+      "path": "skills/learnharness",
+      "commit": "da08cb5f7d098598ba963c6689b22054c9f2a5a3",
+      "license": "AGPL-3.0-only"
+    }
+  },
+  "files": [
+    {
+      "file": "socratic-tutor/LICENSE.md",
+      "sha256": "92cd3e89e1331afd684eef3d4e98c3e53259f572cc57667b63da223f61ecbc84"
+    },
+    {
+      "file": "socratic-tutor/SKILL.md",
+      "sha256": "9190b68440ad99be4d865c63b87939f23a362efac0776c5a67c93d1498bb5e37"
+    },
+    {
+      "file": "learnharness/LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "file": "learnharness/SKILL.md",
+      "sha256": "0f29a1a5bd9c6f629d76ec442c78799b9d95a83a0322c3a84e71c2c442df09bb"
+    },
+    {
+      "file": "learnharness/references/data-format.md",
+      "sha256": "b34f020e9cca38950548c9e21e8cdf86df35d781154bcf2942fe3e323553d926"
+    },
+    {
+      "file": "learnharness/scripts/_data.py",
+      "sha256": "fb4abe3f3e99133a9f5a6e28a0733437d1ec37b5e92ba8413102911145cd2883"
+    },
+    {
+      "file": "learnharness/scripts/graph.py",
+      "sha256": "95d05acebef77764a215439a95b39b1bc0a81d2595c67349d90053e548e236ed"
+    },
+    {
+      "file": "learnharness/scripts/sessions.py",
+      "sha256": "864368dfde5a8c7550ebf80ec77671d9f159f80c0859b248cce20fe799b95dc7"
+    }
+  ]
+}

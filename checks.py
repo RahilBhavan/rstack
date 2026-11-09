@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate package metadata, workflow contracts and repository-local doc links."""
 import json
+import hashlib
 import re
 from pathlib import Path
 
@@ -31,12 +32,20 @@ for path in (skill / "references/workflows").glob("*.json"):
             if not entry.get("name") or not entry.get("when"):
                 errors.append(f"{name}: skill needs its selection condition")
 
+# Preserve upstream files byte-for-byte, including their license and source.
+# The size rule still applies to authored files; only hash-verified manifest
+# entries may retain an upstream size above the local authoring limit.
+manifest = json.loads((ROOT / "docs/tutor-source-manifest.json").read_text())
+vendored_hashes = {"skills/" + item["file"]: item["sha256"] for item in manifest["files"]}
+
 files = [p for p in ROOT.rglob("*") if p.is_file() and
          not any(x in p.relative_to(ROOT).parts for x in
                  (".git", ".local", ".venv", "__pycache__"))]
 for path in files:
     if path.stat().st_size > 20000:
-        errors.append(f"split file by responsibility: {path.relative_to(ROOT)}")
+        expected = vendored_hashes.get(path.relative_to(ROOT).as_posix())
+        if expected is None or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+            errors.append(f"split file by responsibility: {path.relative_to(ROOT)}")
     if path.suffix != ".md":
         continue
     for target in re.findall(r"\]\(([^\n)]+)\)", path.read_text()):

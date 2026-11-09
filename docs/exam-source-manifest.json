@@ -1,0 +1,66 @@
+{
+  "source": "MacBook ~/.claude/skills; selected packages only",
+  "checked": "2026-11-09",
+  "files": [
+    {
+      "file": "exam-prep/SKILL.md",
+      "sha256": "282b8e93ef22fc9430296888dc3abf562797b998a24d47c5606b936181a72000"
+    },
+    {
+      "file": "exam-prep/references/learning-science.md",
+      "sha256": "14e8a5093538a66cd471c3f6cb5a0df92234bc42e129d381b4af690d92e9ec94"
+    },
+    {
+      "file": "exam-prep/references/output-format.md",
+      "sha256": "70cb46e21a4790954ff38340062d7cf27a0a7d414564a836525b7fa455d0a20d"
+    },
+    {
+      "file": "exam-prep/references/practice-exam.md",
+      "sha256": "40eacc2660dd1b4a74f382ad8f3715a4eb1fc0dfb274e4694842babbbae3f606"
+    },
+    {
+      "file": "practice-exam-factory/SKILL.md",
+      "sha256": "cfae47c588eb5dbba5e057e32681bb51aef7a0a5f43d88bd2f80d7111c34e9bd"
+    },
+    {
+      "file": "practice-exam-factory/assets/exams_app.html",
+      "sha256": "42cdf302c2d08bfc453d6aa63c5e722a91c877e1bf05218219f48bdfe4d3cf5b"
+    },
+    {
+      "file": "practice-exam-factory/assets/factory.example.json",
+      "sha256": "7b1ade41da91d3a3d872ff2fe5ee717fefe41192e982fbd5569e35047ff8d805"
+    },
+    {
+      "file": "practice-exam-factory/references/fix_brief.md",
+      "sha256": "b7dd0febf40b7c0a045424c5ed4193cdf9f6c7eb588974cff96afce1cefd5019"
+    },
+    {
+      "file": "practice-exam-factory/references/lessons.md",
+      "sha256": "aefb3ad0303c81120659a44b4afbd3b5251f1561264db5961fff32128a22d43a"
+    },
+    {
+      "file": "practice-exam-factory/references/reviewer_brief.md",
+      "sha256": "979c63abacea6f510fd8794a5bd7d5e3937ab61a1e99bb415bab3b3663666c5b"
+    },
+    {
+      "file": "practice-exam-factory/references/writer_brief.md",
+      "sha256": "f2535eacbe034af768386f3d204e7230601248abff8b68c83fd4f119426107ab"
+    },
+    {
+      "file": "practice-exam-factory/scripts/build_exams.py",
+      "sha256": "080338fe8ee37c161f33d875b496a9018cf88e1808ee512d9bde471f90c862a9"
+    },
+    {
+      "file": "practice-exam-factory/scripts/harness.py",
+      "sha256": "7c837c272d37fca0d1e23edc576fe6bb37e162b4eb2a04d0cd40a83c06b96390"
+    },
+    {
+      "file": "practice-exam-factory/scripts/review.py",
+      "sha256": "09bf911f42bfae14c2985c1487d3f4942ef6050b0941a30de2e96554219f5db1"
+    },
+    {
+      "file": "practice-exam-factory/scripts/verify_outputs.py",
+      "sha256": "07e5328371038e07d1415643ee1d149bb7f493699856ffd98c21f2ab3714d193"
+    }
+  ]
+}

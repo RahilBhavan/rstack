@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<style>
+:root{--ink:#111827;--mute:#4b5563;--line:#e5e7eb;--navy:#1e3a8a;--bg:#fbfbf9;--ok:#16a34a;--okbg:#f0fdf4;--bad:#dc2626;--badbg:#fef2f2}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif}
+main{max-width:860px;margin:0 auto;padding:24px 20px 100px}
+h1{font-size:28px;margin:4px 0 6px}
+h3{margin:22px 0 8px}
+.sub,.stats{color:var(--mute)}
+.panel{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:12px 0;position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+select,button{font:inherit;font-size:14px;padding:5px 10px;border:1px solid #cbd5e1;border-radius:7px;background:#fff;cursor:pointer}
+button.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
+#timer{font-variant-numeric:tabular-nums;font-weight:650}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:12px 0}
+.opt{display:block;padding:6px 10px;margin:4px 0;border:1px solid var(--line);border-radius:8px;cursor:pointer}
+.opt input{margin-right:8px}
+.opt.right{border-color:var(--ok);background:var(--okbg)}
+.opt.wrong{border-color:var(--bad);background:var(--badbg)}
+.exp{margin-top:10px;padding:10px 12px;border-radius:8px;background:#f8fafc;border:1px solid var(--line);font-size:15px}
+.meta{font-size:12px;color:var(--mute)}
+.tag{display:inline-block;padding:0 7px;border-radius:999px;background:#fef3c7;color:#92400e;font-size:12px;font-weight:650;margin-left:6px}
+.score{font-size:20px;font-weight:700;margin:12px 0}
+table{border-collapse:collapse;font-size:14px}td,th{padding:3px 10px;border-bottom:1px solid var(--line);text-align:left}
+</style>
+</head>
+<body>
+<main>
+<h1 id="title"></h1>
+<p class="sub" id="sub"></p>
+<div class="panel">
+  <select id="pick"></select>
+  <button id="start" class="primary">Start timer</button>
+  <span id="timer"></span>
+  <button id="submit">Submit and score</button>
+  <button id="missed">Review my mistakes</button>
+  <button id="export">Save progress to a file</button>
+  <label style="font-size:14px;cursor:pointer"><input type="file" id="import" accept=".json" hidden><u>Load progress file</u></label>
+  <span class="stats" id="hist"></span>
+</div>
+<div id="exam"></div>
+<h3>Your record</h3>
+<div id="record" class="stats"></div>
+</main>
+<script>
+const CONFIG = /*__CONFIG__*/{};
+const EXAMS = /*__EXAMS__*/[];
+const L = "ABCDEFGH";
+const TOTAL = CONFIG.total;
+const STARTS = {};  // question index -> section header, and points per question index
+const POINTS = [];
+{ let k = 0; CONFIG.sections.forEach(s => { STARTS[k] = `${s.title} (${s.points} points each)`; for (let j = 0; j < s.count; j++) POINTS[k++] = s.points; }); }
+let rec = JSON.parse(localStorage.getItem(CONFIG.key) || "{}");
+let cur = 0, tick = null, done = false;
+const unitName = u => CONFIG.units[u] || u;
+const math = el => renderMathInElement(el, {delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}], throwOnError:false});
+document.getElementById("title").textContent = CONFIG.title;
+document.getElementById("sub").textContent = "Each exam copies the real format: " +
+  CONFIG.sections.map(s => `${s.count} ${s.title.toLowerCase()} (${s.points} points each)`).join(", then ") +
+  `, ${TOTAL} points${CONFIG.minutes ? " in " + CONFIG.minutes + " minutes" : ""}. No question repeats across exams. ` +
+  "Answer everything, then press Submit to see your score and every worked solution. Your scores save in this browser. " +
+  "To move them to another browser or device, use \"Save progress to a file\", then \"Load progress file\" there.";
+if (!CONFIG.minutes) document.getElementById("start").hidden = true;
+else document.getElementById("start").textContent = `Start ${CONFIG.minutes}-minute timer`;
+function fillPick(){
+  document.getElementById("pick").innerHTML = EXAMS.map((e, i) => {
+    const r = rec[e.n]; return `<option value="${i}" ${i === cur ? "selected" : ""}>Exam ${e.n}${e.difficulty ? " · difficulty " + e.difficulty : ""}${r ? " · last score " + r.score + "/" + TOTAL : ""}</option>`;
+  }).join("");
+}
+function show(){
+  const ex = EXAMS[cur]; done = false;
+  document.getElementById("exam").innerHTML = ex.qs.map((q, k) => {
+    const head = STARTS[k] ? `<h3>${STARTS[k]}</h3>` : "";
+    const opts = q.kind === "tf"
+      ? ["T", "F"].map(v => `<label class="opt" data-v="${v}"><input type="radio" name="q${k}" value="${v}">${v === "T" ? "True" : "False"}</label>`).join("")
+      : q.opts.map((o, j) => `<label class="opt" data-v="${L[j]}"><input type="radio" name="q${k}" value="${L[j]}">${L[j]}) ${o}</label>`).join("");
+    return `${head}<div class="card" id="q${k}"><b>${k + 1}.</b> ${q.stem}${opts}<div class="exp" hidden></div></div>`;
+  }).join("") + `<div id="result"></div>`;
+  math(document.getElementById("exam"));
+  scrollTo(0, 0);
+}
+function meta(q){
+  return `<span class="meta">${unitName(q.unit)} · ${q.topic}${q.kind === "mc" && q.difficulty ? " · difficulty " + q.difficulty : ""}</span>` +
+    (q.beyond ? '<span class="tag">textbook, beyond the slides</span>' : "");
+}
+function submit(){
+  if (done) return;
+  const ex = EXAMS[cur]; let score = 0; const byUnit = {}, missed = [];
+  ex.qs.forEach((q, k) => {
+    const c = document.getElementById("q" + k), pick = c.querySelector("input:checked");
+    const v = pick ? pick.value : null, right = v === q.ans;
+    if (right) score += POINTS[k]; else missed.push(k);
+    byUnit[q.unit] = byUnit[q.unit] || [0, 0]; byUnit[q.unit][0]++; if (right) byUnit[q.unit][1]++;
+    c.querySelectorAll(".opt").forEach(o => { o.querySelector("input").disabled = true; if (o.dataset.v === q.ans) o.classList.add("right"); else if (o.dataset.v === v) o.classList.add("wrong"); });
+    const ans = q.kind === "tf" ? (q.ans === "T" ? "True" : "False") : q.ans;
+    const e = c.querySelector(".exp"); e.hidden = false;
+    e.innerHTML = `<b>${right ? "Right" : v ? "Wrong" : "Blank"}. Answer: ${ans}.</b> ${meta(q)}<br>${q.explain}`;
+    math(e);
+  });
+  done = true; clearInterval(tick); document.getElementById("timer").textContent = "";
+  rec[ex.n] = {score, byUnit, missed, when: new Date().toISOString().slice(0, 10)};
+  localStorage.setItem(CONFIG.key, JSON.stringify(rec));
+  document.getElementById("result").innerHTML = `<div class="score">Score: ${score} / ${TOTAL} (${Math.round(100 * score / TOTAL)}%)</div>`;
+  fillPick(); record();
+  document.getElementById("result").scrollIntoView();
+}
+function record(){
+  const taken = Object.keys(rec);
+  if (!taken.length) { document.getElementById("record").textContent = "No exams submitted yet."; document.getElementById("hist").textContent = ""; return; }
+  const scores = taken.map(n => rec[n].score), per = {};
+  taken.forEach(n => Object.entries(rec[n].byUnit || {}).forEach(([u, [t, r]]) => { per[u] = per[u] || [0, 0]; per[u][0] += t; per[u][1] += r; }));
+  document.getElementById("hist").textContent = `${taken.length} of ${EXAMS.length} exams taken · average ${Math.round(scores.reduce((a, b) => a + b, 0) / scores.length)}/${TOTAL}`;
+  document.getElementById("record").innerHTML = "<table><tr><th>Unit</th><th>Right</th><th>Accuracy</th></tr>" +
+    Object.keys(per).sort().map(u => `<tr><td>${unitName(u)}</td><td>${per[u][1]} of ${per[u][0]}</td><td>${Math.round(100 * per[u][1] / per[u][0])}%</td></tr>`).join("") +
+    "</table><p>Review your weakest unit before the next exam.</p>";
+}
+document.getElementById("pick").onchange = e => { cur = +e.target.value; clearInterval(tick); document.getElementById("timer").textContent = ""; show(); };
+document.getElementById("submit").onclick = submit;
+document.getElementById("start").onclick = () => {
+  clearInterval(tick); const end = Date.now() + CONFIG.minutes * 60 * 1000;
+  tick = setInterval(() => {
+    const s = Math.max(0, Math.round((end - Date.now()) / 1000));
+    document.getElementById("timer").textContent = `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")} left`;
+    if (!s) submit();
+  }, 1000);
+};
+document.getElementById("missed").onclick = () => {
+  clearInterval(tick); document.getElementById("timer").textContent = "";
+  const list = [];
+  EXAMS.forEach(e => (rec[e.n] && rec[e.n].missed || []).forEach(k => list.push([e.n, k, e.qs[k]])));
+  const el = document.getElementById("exam");
+  el.innerHTML = `<h3>Your mistakes (${list.length})</h3>` + (list.length ? "" : "<p class='stats'>No missed questions yet. Submit an exam first.</p>") +
+    list.map(([n, k, q]) => {
+      const ans = q.kind === "tf" ? (q.ans === "T" ? "True" : "False") : q.ans;
+      const opts = q.kind === "mc" ? q.opts.map((o, j) => `<div class="opt ${L[j] === q.ans ? "right" : ""}">${L[j]}) ${o}</div>`).join("") : "";
+      return `<div class="card"><div class="meta">Exam ${n}, question ${k + 1}</div>${meta(q)}<div>${q.stem}</div>${opts}<div class="exp"><b>Answer: ${ans}.</b> ${q.explain}</div></div>`;
+    }).join("");
+  math(el); scrollTo(0, 0);
+};
+document.getElementById("export").onclick = () => {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(rec)], {type: "application/json"}));
+  a.download = CONFIG.key.replace(/[^a-z0-9-]/gi, "-") + "-progress.json"; a.click();
+};
+document.getElementById("import").onchange = e => {
+  const f = e.target.files[0]; if (!f) return;
+  f.text().then(t => { Object.assign(rec, JSON.parse(t)); localStorage.setItem(CONFIG.key, JSON.stringify(rec)); fillPick(); record(); });
+};
+const firstNew = EXAMS.findIndex(e => !rec[e.n]); cur = firstNew < 0 ? 0 : firstNew;
+fillPick(); show(); record();
+</script>
+</body>
+</html>

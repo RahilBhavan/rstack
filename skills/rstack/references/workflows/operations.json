@@ -32,8 +32,20 @@
     "boundary": "No application submission, outreach send or fabricated contribution."
   },
   "learn": {
-    "outcome": "Help the user close one demonstrated understanding gap.",
+    "outcome": "Help the user close one demonstrated understanding gap, or tutor a topic to a checked level.",
     "skills": [
+      {
+        "name": "study-loop",
+        "when": "Study continues across sessions, reviews are due, or progress must be tracked or measured. It leads and runs socratic-tutor inside it."
+      },
+      {
+        "name": "socratic-tutor",
+        "when": "The user asks to be taught, quizzed or drilled to mastery on a topic. Lead the session with its diagnostic, 0-5 skill map and one-question loop."
+      },
+      {
+        "name": "learnharness",
+        "when": "LearnHarness learning data exists on this host. Read past sessions read-only to seed the diagnostic and reuse familiar ideas; never write to the data."
+      },
       {
         "name": "explainer",
         "when": "Explain the diagnosed gap in a useful format."
@@ -41,6 +53,10 @@
       {
         "name": "exam-prep",
         "when": "The user requests course/exam preparation using its intended environment."
+      },
+      {
+        "name": "practice-exam-factory",
+        "when": "Multiple objective-format practice exams requested; use the real format/style anchor and bounded independent checks."
       },
       {
         "name": "recruiting-prep",
@@ -52,16 +68,20 @@
       }
     ],
     "inputs": [
-      "Rubric/original material and user's unaided attempt; label the diagnosis unknown if absent."
+      "Rubric/original material and user's unaided attempt; label the diagnosis unknown if absent.",
+      "Optional: the LearnHarness data folder (default per OS, or --data-dir) and a prior socratic-tutor save-state block."
     ],
     "steps": [
-      "Identify one gap from the attempt or prepare a short diagnostic.",
-      "Teach that gap using the source evidence.",
-      "Prepare a fresh unaided check without treating generated answers as mastery."
+      "For ongoing study, start with study-loop: review what learnq.py due lists before new material.",
+      "If LearnHarness data exists, read the learner's own answers, confidence and thinking. Treat graph propositions as topics met, not mastery.",
+      "Identify one gap from the attempt or history, or run a short diagnostic. History picks which diagnostic questions come first; it never sets levels.",
+      "Teach that gap using the source evidence. At level 0-1 use study-loop's worked-example beginner mode; from level 2 use the socratic-tutor loop.",
+      "Prepare a fresh unaided check without treating generated answers as mastery. Levels 4-5 need a code, checker or human grader. Use exam-prep when the check must match a real exam format.",
+      "Record each check in the study-loop queue. On pause, emit the socratic-tutor save-state block. Write nothing into the LearnHarness data folder."
     ],
     "check": "Observe a fresh human attempt against a rubric; agent output is preparation evidence.",
     "stop": "Targeted help and fresh check prepared, or actual attempt establishes the intended learning.",
-    "boundary": "Local preparation within the existing task authorization."
+    "boundary": "Local preparation within the existing task authorization. LearnHarness data is read-only."
   },
   "calendar": {
     "outcome": "Prepare or perform authorized changes to Rahil's calendar.",

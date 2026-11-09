@@ -32,6 +32,30 @@ inventory, including vendor templates and runtime-specific skills. It does not m
 172 workflows have been exercised or every corresponding tool is connected.
 See the [catalog snapshot](docs/catalog.md) and [verification](docs/verification.md).
 
+## Have your AI install it from GitHub
+
+Public repository: **https://github.com/RahilBhavan/rstack**. No GitHub account is
+needed to clone this public source. Paste this into your T3/Codex/Claude Code agent:
+
+```text
+Read https://github.com/RahilBhavan/rstack at release v0.1.0, including README.md,
+INSTALL_WITH_AI.md, ATTRIBUTION.md and docs/learning-bundle.md. Install the six
+allowlisted learning packages on my Mac from a reviewed checkout at
+~/Projects/rstack. Preserve existing files, skill folders, remotes and local edits.
+Preview installation first; never overwrite a conflict. Use Python3.10+ and a
+local virtual environment. Verify all12 links across ~/.agents/skills and
+~/.claude/skills, repeat the preview, run inventory and doctor in isolated local
+state, and show the exact installed commit and first skill invocation.
+Keep Full access selected. Do not request account tokens, install unrelated
+packages or run the exam factory merely to verify installation. Public cloning
+needs no GitHub sign-in. Report blocked steps separately and explain when a fresh
+provider session is needed for skill discovery.
+```
+
+See [INSTALL_WITH_AI.md](INSTALL_WITH_AI.md) for exact commands, update/removal
+rules and what counts as a verified installation. An AI needs tools and network
+access; merely reading this page does not install anything.
+
 ## Install
 
 Use Python 3.10+ with [PyYAML 6](requirements.txt) installed in the environment that
@@ -55,9 +79,11 @@ Invoke `$rstack` or ask the agent to use rstack. If a client does not discover i
 give the agent the actual path to [SKILL.md](skills/rstack/SKILL.md). It can read and
 use the same entry point directly.
 
-Rstack uses the skills already present on the host. A clone does not redistribute
-the entire collection or connect accounts. Install original packages separately
-under their own terms and run inventory on that machine.
+Rstack uses the skills already present on the host. This checkout now also includes
+the explicitly requested exam-prep and practice-exam-factory learning packages from
+Rahil's MacBook, plus the upstream socratic-tutor and learnharness skills and the study-loop that joins them. It does not bundle the rest of the installed collection or connect
+accounts. See docs/learning-bundle.md for the six-package previewable installer;
+install other original packages under their own terms and inventory that machine.
 
 ## Browse and plan
 
@@ -129,3 +155,11 @@ Skill packaging and directory-link guidance were checked against the official
 [Skills in plugins](https://developers.openai.com/plugins/concepts/skills) documentation.
 Local utility checks establish the behavior described in the verification record;
 real task quality and usefulness need continued observation.
+
+## Learning bundle
+
+The MECG guide includes a downloadable archive of this checkout with the router,
+two exam skills, two tutoring skills and the study loop. Follow [the installation and skill guide](docs/learning-bundle.md).
+Public upstream: https://github.com/RahilBhavan/rstack. The v0.1.0 release is the versioned source for AI-assisted installation. The existing rstack.py install command still links
+only the router. install_learning.py explicitly manages the six allowlisted
+packages, previews by default and refuses foreign paths.

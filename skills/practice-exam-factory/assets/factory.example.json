@@ -1,0 +1,20 @@
+{
+  "course": "ECON 401",
+  "exam": "Exam 2",
+  "n_exams": 115,
+  "minutes": 90,
+  "options": 5,
+  "nota": "None of the above",
+  "seed": 401,
+  "units": [
+    {"id": "L09", "name": "L09 Welfare", "slides": "/abs/path/Micro09One.pdf"},
+    {"id": "L10", "name": "L10 Market demand", "slides": "/abs/path/Micro10One.pdf"}
+  ],
+  "sections": [
+    {"kind": "tf", "count": 10, "points": 2, "title": "True-False Questions"},
+    {"kind": "mc", "count": 17, "points": 5, "title": "Multiple-Choice Questions"}
+  ],
+  "style_anchor": "/abs/path/PracticeExam2.pdf",
+  "caps": {"beyond_mc": 3, "beyond_tf": 2, "hard_mc": 1},
+  "drop": []
+}
