@@ -1,9 +1,13 @@
 ---
 name: rstack
-description: Compose Rahil's installed skills into a task-specific workflow with source discovery, project-aware routing and observable checks. Use for rstack, requests to work with Rahil's stack, or coordinating work across his skill collection. Simple questions and edits stay lightweight.
+description: Compose Rahil's installed skills into a task-specific workflow with source discovery, project-aware routing and observable checks. Use for rstack, requests to work with Rahil's stack, or coordinating work across his skill collection. Also use for new-user orientation. Simple questions and edits stay lightweight.
 ---
 
 # rstack
+
+For “orient me”, “onboard me” or a first-use tour, follow
+[orientation](references/orientation.md). It adapts to the person’s goal and available
+tools. Skip orientation for ordinary tasks unless requested.
 
 Turn the request into a checked result using the relevant parts of the installed
 library. All skills remain available. Load instructions as their steps become

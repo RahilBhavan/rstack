@@ -1,8 +1,12 @@
 ---
 name: rstack
-description: Compose a bundled library of engineering, research, design and learning workflows. Use when asked to use rstack, select a workflow from this library, or coordinate a task through Rahil's skill stack.
+description: Compose a bundled library of engineering, research, design and learning workflows. Use when asked to use rstack, select a workflow from this library, coordinate a task through Rahil's skill stack, or get oriented as a new user.
 ---
 # Rstack
+
+For “orient me”, “onboard me”, “getting started”, or a first-use tour, follow
+[orientation](references/orientation.md) before browsing the index. Skip questions
+already answered and move directly to a supplied goal. Orientation is optional.
 
 Use this self-contained library to complete the user's task. Start with the
 [index](references/index.md), or search with `python3 scripts/find.py "task words"`

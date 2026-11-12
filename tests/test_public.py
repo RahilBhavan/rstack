@@ -118,5 +118,5 @@ class PluginTests(unittest.TestCase):
                 self.assertIn('rstack-plugin/skills/rstack/SKILL.md', z.namelist())
                 manifest = json.loads(z.read('rstack-plugin/plugin.json'))
                 self.assertEqual(manifest['name'], 'rstack')
-                self.assertEqual(manifest['version'], '0.3.0')
+                self.assertEqual(manifest['version'], '0.4.0')
                 self.assertIn('rstack-plugin/.claude-plugin/plugin.json', z.namelist())

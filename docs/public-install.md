@@ -1,7 +1,7 @@
-# Install rstack v0.3.0
+# Install rstack v0.4.0
 
-[Download the public skill ZIP](https://github.com/RahilBhavan/rstack/releases/download/v0.3.0/rstack-public.zip)
-from the [versioned release](https://github.com/RahilBhavan/rstack/releases/tag/v0.3.0).
+[Download the public skill ZIP](https://github.com/RahilBhavan/rstack/releases/download/v0.4.0/rstack-public.zip)
+from the [versioned release](https://github.com/RahilBhavan/rstack/releases/tag/v0.4.0).
 It contains one router and 103 leaf workflows: the reviewed learning kit plus
 Matt Pocock, Poteto and Theo. All supporting resources and original license notices
 are included. No checkout, API key, paid model subscription or maintainer account
@@ -55,7 +55,10 @@ If Python is unavailable, extract that folder manually into the client's skill r
 Start a fresh session if the client caches discovery. Other assistants can read the
 extracted `SKILL.md` directly; native discovery requires Agent Skills support.
 
-Try: **Use rstack to help me practice SQL across several days.**
+Start here: **Use rstack to orient me.** It helps you choose a goal, checks what
+this session supports and guides your first task. See [orientation](orientation.md).
+
+Or try: **Use rstack to help me practice SQL across several days.**
 Or: **Use rstack to plan a test-driven change to this Python CLI.**
 Only relevant instructions are loaded. The index remains readable without Python;
 the optional `scripts/find.py` search uses the standard library.

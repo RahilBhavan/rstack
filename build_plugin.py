@@ -8,11 +8,11 @@ from build_public import public_files
 
 MANIFEST = {
     '$schema': 'https://agent-plugins.org/schemas/1.0.0/plugin.schema.json',
-    'name': 'rstack', 'version': '0.3.0',
+    'name': 'rstack', 'version': '0.4.0',
     'description': 'A portable router for 103 engineering, research, design and learning workflows.',
     'author': {'name': 'Rahil Bhavan'},
     'repository': 'https://github.com/RahilBhavan/rstack',
-    'homepage': 'https://github.com/RahilBhavan/rstack/releases/tag/v0.3.0'
+    'homepage': 'https://github.com/RahilBhavan/rstack/releases/tag/v0.4.0'
 }
 
 

@@ -38,6 +38,7 @@ def public_files():
         raise ValueError('Reviewed scope changed; expected 103 leaf skills')
     files = {'rstack/SKILL.md': (ROOT / 'public/SKILL.md').read_bytes(),
              'rstack/scripts/find.py': (ROOT / 'public/find.py').read_bytes()}
+    files['rstack/references/orientation.md'] = (ROOT / 'skills/rstack/references/orientation.md').read_bytes()
     records = []
     for e in entries:
         source = Path(e['path']).relative_to(ROOT).as_posix()

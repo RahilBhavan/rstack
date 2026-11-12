@@ -53,7 +53,8 @@ def install(archive, target, apply=False):
         if actual == set(files) and all(not (destination / n).is_symlink()
                                        and (destination / n).read_bytes() == d
                                        for n, d in files.items()):
-            return {'status': 'already-installed', 'destination': str(destination), 'written': False}
+            return {'status': 'already-installed', 'destination': str(destination), 'written': False,
+                    'next': 'Ask your agent: Use rstack to orient me.'}
         raise ValueError('Existing installation differs; preserve it and use a fresh target: ' + str(destination))
     if apply:
         destination.parent.mkdir(parents=True, exist_ok=True)
@@ -67,7 +68,8 @@ def install(archive, target, apply=False):
             shutil.rmtree(destination)
             raise
     return {'status': 'installed' if apply else 'preview', 'destination': str(destination),
-            'files': len(files), 'written': apply}
+            'files': len(files), 'written': apply,
+            'next': 'Ask your agent: Use rstack to orient me.'}
 
 
 def main():

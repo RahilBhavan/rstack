@@ -8,7 +8,7 @@ from pathlib import Path
 import yaml
 
 from . import VERSION
-from .catalog import find, read_roots, resolve, scan, write_json
+from .catalog import SKILL_DIR, find, read_roots, resolve, scan, write_json
 from .diagnostics import diagnose
 from .installation import change_links
 from .planning import definitions, pack_for, plan
@@ -20,6 +20,8 @@ def parser():
     p.add_argument("--state-dir", type=Path,
                    default=Path(os.environ.get("RSTACK_STATE_DIR", Path.home() / ".local/state/rstack")))
     sub = p.add_subparsers(dest="command", required=True)
+    sub.add_parser("orientation", aliases=["orient", "onboard"],
+                   help="Print the new-user orientation workflow for your agent.")
     inv = sub.add_parser("inventory", help="Refresh a local inventory; never execute skill code.")
     inv.add_argument("--config", type=Path, help="JSON roots configuration; replaces default roots.")
     inv.add_argument("--project", type=Path, default=Path.cwd())
@@ -89,6 +91,9 @@ def print_entries(entries):
 def main(argv=None):
     args = parser().parse_args(argv)
     try:
+        if args.command in ("orientation", "orient", "onboard"):
+            print((SKILL_DIR / "references/orientation.md").read_text())
+            return 0
         if args.command == "workflows":
             for name, definition in sorted(definitions("workflows.json").items()):
                 print(f"{name}: {definition['outcome']}")
