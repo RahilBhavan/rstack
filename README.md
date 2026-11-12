@@ -17,6 +17,17 @@ Use $rstack to explain this finding with a sourced visual.
 Use $rstack to work out why this skill keeps failing.
 ```
 
+## Download and install v0.3.0
+
+**[Download the public skill ZIP](https://github.com/RahilBhavan/rstack/releases/download/v0.3.0/rstack-public.zip)**
+— one self-contained router for 103 reviewed leaf workflows, with all source
+resources and license notices. [Installation guide](docs/public-install.md) covers
+Claude skill upload, ChatGPT skill/plugin availability, Codex, Claude Code and other
+filesystem agents. A standalone installer and plugin ZIP are included in the release.
+No checkout or pip packages are needed to install. Platform-specific workflows still
+require their own tools/accounts; public directory listing and account-level upload
+acceptance are separate from downloadable package verification.
+
 ## Included upstream collections
 
 This release contains the actual source files, references and license notices:

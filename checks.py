@@ -57,6 +57,10 @@ for path in files:
     # authoring conventions, governs these exact snapshots; tools are not activated.
     if path.relative_to(ROOT).as_posix() in upstream_hashes:
         continue
+    # This is the ZIP entry template. Its relative links resolve in the generated
+    # archive, exercised by test_public, rather than in the authoring directory.
+    if path.relative_to(ROOT).as_posix() == "public/SKILL.md":
+        continue
     if path.suffix != ".md":
         continue
     for target in re.findall(r"\]\(([^\n)]+)\)", path.read_text()):

@@ -68,3 +68,16 @@ packages. Default discovery covers104 packages total. These collections supersed
 the earlier six-package-only release scope; they do not include vendor caches,
 private project skills, paid assets or unreviewed Construct materials. Copies of
 upstream setup instructions are not permission to activate their integrations.
+
+## Portable release v0.3.0
+
+The public portable selection is exactly the existing 104 enabled entries: the
+router plus 103 leaf workflows. Complete reviewed source trees and notices are
+preserved; only nested entry filenames change to instructions.md to expose one
+native skill. Original unmodified source layout is provided in the matching source
+archive. Parent MIT licenses from all three upstream families are copied into the
+portable licenses folder. LearnHarness retains its separate AGPL notice and full
+unmodified source. There is no new redistribution of installed provider caches,
+private project packages or unreviewed third-party adaptations. New standalone
+installer, search helper, public router and packaging utilities are original rstack
+work under the root MIT license.
